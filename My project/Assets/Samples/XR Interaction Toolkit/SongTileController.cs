@@ -13,6 +13,8 @@ public class SongData
 
     [TextArea]
     public string lyricsVTT;
+
+    public string songLength;
 }
 
 public class SongTileController : MonoBehaviour
@@ -21,6 +23,8 @@ public class SongTileController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI songNameText;
     [SerializeField] private TextMeshProUGUI artistNameText;
     [SerializeField] private Image thumbnailImage;
+
+    [SerializeField] private TextMeshProUGUI songLengthText;
 
     private SongData songData;
 
@@ -128,13 +132,23 @@ public class SongTileController : MonoBehaviour
         }
     }
 
+    public void SetSongLength(string songLength)
+    {
+        if (songLengthText != null)
+        {
+            songLengthText.text = songLength;
+        }
+        else
+        {
+            Debug.LogWarning("Song Length Text component is not assigned in SongListController");
+        }
+    }
+
     public void SetSongUI(SongData songData)
     {
         SetSongName(songData.song);
         SetArtistName(songData.artist);
         SetImage(songData.thumbnailSprite);
+        SetSongLength(songData.songLength);
     }
-
-
-    
 }
