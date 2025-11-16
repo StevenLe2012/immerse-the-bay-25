@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "blank-space",
+    "title": "Blank Space",
+    "author": "Taylor Swift",
+    "audioFile": "audio/blank_space.mp3",
+    "thumbnailFile": "thumbnails/blank_space.jpg",
+    "lyricsFile": "lyrics/blank_space.vtt",
+    "duration": 231,
+    "tags": ["pop", "taylor-swift", "1989", "karaoke"]
+  },
+  {
+    "id": "blue",
+    "title": "Blue",
+    "author": "yung kai",
+    "audioFile": "audio/blue.mp3",
+    "thumbnailFile": "thumbnails/blue.jpg",
+    "lyricsFile": "lyrics/blue.vtt",
+    "duration": 180,
+    "tags": ["pop", "sad", "emo", "2024", "karaoke"]
+  },
+  {
+    "id": "chest-pain",
+    "title": "Chest Pain",
+    "author": "King Gordo",
+    "audioFile": "audio/chest_pain.mp3",
+    "thumbnailFile": "thumbnails/chest_pain.jpg",
+    "lyricsFile": "lyrics/chest_pain.vtt",
+    "duration": 165,
+    "tags": ["hip-hop", "rap", "2024", "karaoke"]
+  },
+  {
+    "id": "die-with-a-smile",
+    "title": "Die With A Smile",
+    "author": "Lady Gaga & Bruno Mars",
+    "audioFile": "audio/die_with_a_smile.mp3",
+    "thumbnailFile": "thumbnails/die_with_a_smile.png",
+    "lyricsFile": "lyrics/die_with_a_smile.vtt",
+    "duration": 251,
+    "tags": ["pop", "duet", "ballad", "2024", "karaoke"]
+  },
+  {
+    "id": "golden-hour",
+    "title": "Golden Hour",
+    "author": "JVKE",
+    "audioFile": "audio/golden.mp3",
+    "thumbnailFile": "thumbnails/golden.jpg",
+    "lyricsFile": "lyrics/golden.vtt",
+    "duration": 209,
+    "tags": ["pop", "viral", "tiktok", "romance", "2022", "karaoke"]
+  },
+  {
+    "id": "heather",
+    "title": "Heather",
+    "author": "Conan Gray",
+    "audioFile": "audio/heather.mp3",
+    "thumbnailFile": "thumbnails/heather.jpg",
+    "lyricsFile": "lyrics/heather.vtt",
+    "duration": 199,
+    "tags": ["pop", "sad", "heartbreak", "2020", "karaoke"]
+  },
+  {
+    "id": "party-4-u",
+    "title": "Party 4 U",
+    "author": "Charli XCX",
+    "audioFile": "audio/party_4_u.mp3",
+    "thumbnailFile": "thumbnails/party_4_u.jpg",
+    "lyricsFile": "lyrics/party4u.vtt",
+    "duration": 238,
+    "tags": ["pop", "dance", "party", "2022", "karaoke"]
+  }
+]

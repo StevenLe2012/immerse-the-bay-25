@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const LIBRARY_FILE = path.join(__dirname, 'song-library.json');
-const SONGS_DIR = path.join(__dirname, 'songs');
+const SONGS_DIR = path.join(__dirname, '..', 'Assets', 'songs');
 
 class SongLibrary {
     constructor() {

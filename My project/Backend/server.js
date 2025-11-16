@@ -17,7 +17,12 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use('/songs', express.static(path.join(__dirname, 'songs')));
+
+// Serve songs from Assets folder (where Unity has them)
+const songsPath = path.join(__dirname, '..', 'Assets', 'songs');
+app.use('/songs', express.static(songsPath));
+
+console.log('Serving songs from:', songsPath);
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
