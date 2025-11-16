@@ -15,33 +15,33 @@ public class SearchUI : MonoBehaviour
     [SerializeField] private Transform resultsContainer;
     [SerializeField] private GameObject resultItemPrefab;
     [SerializeField] private ScrollRect scrollRect;
-    
+
     [Header("Loading")]
     [SerializeField] private GameObject loadingIndicator;
-    
+
     private KaraokeManager karaokeManager;
     private List<GameObject> resultItems = new List<GameObject>();
-    
+
     void Start()
     {
-        karaokeManager = FindObjectOfType<KaraokeManager>();
-        
+        karaokeManager = FindFirstObjectByType<KaraokeManager>();
+
         if (searchButton != null)
         {
             searchButton.onClick.AddListener(OnSearchButtonClicked);
         }
-        
+
         if (searchInputField != null)
         {
             searchInputField.onSubmit.AddListener((text) => OnSearchButtonClicked());
         }
-        
+
         if (loadingIndicator != null)
         {
             loadingIndicator.SetActive(false);
         }
     }
-    
+
     /// <summary>
     /// Called when search button is clicked
     /// </summary>
@@ -52,7 +52,7 @@ public class SearchUI : MonoBehaviour
             PerformSearch(searchInputField.text);
         }
     }
-    
+
     /// <summary>
     /// Perform search for karaoke songs
     /// </summary>
@@ -61,50 +61,50 @@ public class SearchUI : MonoBehaviour
         if (karaokeManager != null)
         {
             ClearResults();
-            
+
             if (loadingIndicator != null)
             {
                 loadingIndicator.SetActive(true);
             }
-            
+
             karaokeManager.SearchKaraoke(query);
         }
     }
-    
+
     /// <summary>
     /// Display search results
     /// </summary>
     public void DisplayResults(List<VideoSearchResult> results)
     {
         ClearResults();
-        
+
         if (loadingIndicator != null)
         {
             loadingIndicator.SetActive(false);
         }
-        
+
         foreach (VideoSearchResult result in results)
         {
             CreateResultItem(result);
         }
-        
+
         // Reset scroll position
         if (scrollRect != null)
         {
             scrollRect.verticalNormalizedPosition = 1f;
         }
     }
-    
+
     /// <summary>
     /// Create a result item in the UI
     /// </summary>
     private void CreateResultItem(VideoSearchResult result)
     {
         if (resultItemPrefab == null || resultsContainer == null) return;
-        
+
         GameObject item = Instantiate(resultItemPrefab, resultsContainer);
         resultItems.Add(item);
-        
+
         // Set up the result item
         ResultItemUI resultUI = item.GetComponent<ResultItemUI>();
         if (resultUI != null)
@@ -112,7 +112,7 @@ public class SearchUI : MonoBehaviour
             resultUI.Setup(result, OnResultSelected);
         }
     }
-    
+
     /// <summary>
     /// Called when a result is selected
     /// </summary>
@@ -123,7 +123,7 @@ public class SearchUI : MonoBehaviour
             karaokeManager.SelectVideo(videoId);
         }
     }
-    
+
     /// <summary>
     /// Clear all search results
     /// </summary>
@@ -146,10 +146,10 @@ public class ResultItemUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI channelText;
     [SerializeField] private RawImage thumbnailImage;
     [SerializeField] private Button selectButton;
-    
+
     private string videoId;
     private System.Action<string> onSelectCallback;
-    
+
     /// <summary>
     /// Setup the result item with data
     /// </summary>
@@ -157,28 +157,28 @@ public class ResultItemUI : MonoBehaviour
     {
         videoId = result.videoId;
         onSelectCallback = callback;
-        
+
         if (titleText != null)
         {
             titleText.text = result.title;
         }
-        
+
         if (channelText != null)
         {
             channelText.text = result.channelTitle;
         }
-        
+
         if (thumbnailImage != null && !string.IsNullOrEmpty(result.thumbnailUrl))
         {
             StartCoroutine(LoadThumbnail(result.thumbnailUrl));
         }
-        
+
         if (selectButton != null)
         {
             selectButton.onClick.AddListener(OnSelectClicked);
         }
     }
-    
+
     /// <summary>
     /// Load thumbnail from URL
     /// </summary>
@@ -186,7 +186,7 @@ public class ResultItemUI : MonoBehaviour
     {
         UnityEngine.Networking.UnityWebRequest request = UnityEngine.Networking.UnityWebRequestTexture.GetTexture(url);
         yield return request.SendWebRequest();
-        
+
         if (request.result == UnityEngine.Networking.UnityWebRequest.Result.Success)
         {
             Texture2D texture = UnityEngine.Networking.DownloadHandlerTexture.GetContent(request);
@@ -196,7 +196,7 @@ public class ResultItemUI : MonoBehaviour
             }
         }
     }
-    
+
     /// <summary>
     /// Called when select button is clicked
     /// </summary>
