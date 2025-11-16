@@ -27,7 +27,7 @@ public class SongListController : MonoBehaviour
     public void PopulateSongList()
     {
         ClearSongList();
-        
+
         if (songTilePrefab == null)
         {
             Debug.LogError("Song Tile Prefab is not assigned in SongListController!");
@@ -65,7 +65,7 @@ public class SongListController : MonoBehaviour
     public void PopulateSongList(List<string> songNames, List<string> artistNames, List<Sprite> sprites)
     {
         ClearSongList();
-        
+
         if (songTilePrefab == null || contentContainer == null)
         {
             Debug.LogError("Prefab or Container not assigned in SongListController!");
@@ -103,6 +103,7 @@ public class SongListController : MonoBehaviour
             print("Song: " + songData.song);
             print("Artist: " + songData.artist);
             print("Thumbnail Sprite: " + songData.thumbnailSprite);
+            tileController.SetSongData(songData.song, songData.artist, songData.thumbnailSprite, songData.lyricsVTT);
             tileController.SetSongUI(songData.song, songData.artist, songData.thumbnailSprite);
         }
         else
