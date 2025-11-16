@@ -22,7 +22,7 @@ public class Timestamp
     }
     public Timestamp(string text)
     {
-        Debug.Log(text);
+        // Debug.Log(text);
         var split = text.Split(':');
 
         if (split.Length == 2)
@@ -97,9 +97,22 @@ public class KaraokeText : MonoBehaviour
 
     public void setupKaraoke(AudioClip audioClip, string vttLyrics)
     {
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource is not assigned in KaraokeText!");
+            return;
+        }
+
+        if (audioClip == null)
+        {
+            Debug.LogError("AudioClip is null! Cannot setup karaoke.");
+            return;
+        }
+
         this.audioSource.clip = audioClip;
         this.vttLyrics = vttLyrics;
         InitKaraoke();
+        audioSource.Play();
     }
     
 
@@ -155,13 +168,16 @@ public class KaraokeText : MonoBehaviour
     }
     public void UpdateKaraoke()
     {
+        // Check if we have finished all the lyrics or if lyrics list is empty.
+        if (currentIndex >= lyrics.Count || lyrics.Count == 0) return;
+
         // Move to the next lyric if we have finished this lyric.
         if (lyrics[currentIndex].end.GetTotalSeconds() < GetAudioTime())
         {
             currentIndex++;
         }
 
-        // Check if we have finished all the lyrics.
+        // Check again after incrementing.
         if (currentIndex >= lyrics.Count) return;
 
         var lyric = lyrics[currentIndex];
@@ -193,11 +209,17 @@ public class KaraokeText : MonoBehaviour
     // If you want you can reset timeElapsed, but AudioSource.time is more accurate.
     float GetAudioTime()
     {
+        if (audioSource == null || audioSource.clip == null)
+        {
+            return 0f;
+        }
+        
+        // Check if audio is actually playing, otherwise return 0
+        if (!audioSource.isPlaying)
+        {
+            return 0f;
+        }
+        
         return audioSource.time;
-    }
-
-    public void SetAudioSource(AudioClip audioClip)
-    {
-        this.audioSource.clip = audioClip;
     }
 }

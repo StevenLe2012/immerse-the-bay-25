@@ -11,6 +11,7 @@ public class SongData
 
     public AudioClip audioClip;
 
+    [TextArea]
     public string lyricsVTT;
 }
 
@@ -78,20 +79,6 @@ public class SongTileController : MonoBehaviour
         }
     }
 
-    public void SetSongData(string song, string artist, Sprite thumbnailSprite, string lyricsVTT)
-    {
-        if (songData == null)
-        {
-            songData = new SongData();
-        }
-        
-        songData.song = song;
-        songData.artist = artist;
-        songData.thumbnailSprite = thumbnailSprite;
-        songData.lyricsVTT = lyricsVTT;
-    }
-
-
 
     /// <summary>
     /// Changes the artist name text component
@@ -141,16 +128,13 @@ public class SongTileController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Changes all three components at once: song name, artist name, and image
-    /// </summary>
-    /// <param name="songName">The name of the song to display</param>
-    /// <param name="artistName">The name of the artist to display</param>
-    /// <param name="sprite">The sprite to display as the thumbnail</param>
-    public void SetSongUI(string songName, string artistName, Sprite sprite)
+    public void SetSongUI(SongData songData)
     {
-        SetSongName(songName);
-        SetArtistName(artistName);
-        SetImage(sprite);
+        SetSongName(songData.song);
+        SetArtistName(songData.artist);
+        SetImage(songData.thumbnailSprite);
     }
+
+
+    
 }

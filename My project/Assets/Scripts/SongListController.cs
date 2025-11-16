@@ -103,8 +103,8 @@ public class SongListController : MonoBehaviour
             print("Song: " + songData.song);
             print("Artist: " + songData.artist);
             print("Thumbnail Sprite: " + songData.thumbnailSprite);
-            tileController.SetSongData(songData.song, songData.artist, songData.thumbnailSprite, songData.lyricsVTT);
-            tileController.SetSongUI(songData.song, songData.artist, songData.thumbnailSprite);
+            tileController.SetSongData(songData);
+            tileController.SetSongUI(songData);
         }
         else
         {
