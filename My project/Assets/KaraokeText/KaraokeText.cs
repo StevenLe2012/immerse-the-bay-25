@@ -23,9 +23,10 @@ public class Timestamp
     {
         Debug.Log(text);
         var split = text.Split(':');
-        hours = int.Parse(split[0]);
-        minutes = int.Parse(split[1]);
-        seconds = double.Parse(split[2]);
+        hours = 0;
+        minutes = int.Parse(split[0]);
+        seconds = double.Parse(split[1]);
+        //seconds = double.Parse(split[2]);
     }
 }
 public class LyricalLine
@@ -36,6 +37,9 @@ public class LyricalLine
 }
 public class KaraokeText : MonoBehaviour
 {
+    // audiosource, very important that it is set!!!
+    public AudioSource audioSource;
+
     // The canvas UI gameobject.
     public Canvas canvas;
 
@@ -161,6 +165,6 @@ public class KaraokeText : MonoBehaviour
     // If you want you can reset timeElapsed, but AudioSource.time is more accurate.
     float GetAudioTime()
     {
-        return timeElapsed;
+        return audioSource.time;
     }
 }

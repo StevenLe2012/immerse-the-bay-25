@@ -10,6 +10,7 @@
     "com.unity.xr.arcore": "6.2.0",
     "com.unity.xr.arfoundation": "6.2.1",
     "com.unity.xr.arkit": "6.2.0",
+    "com.unity.xr.hands": "1.7.1",
     "com.unity.xr.interaction.toolkit": "3.2.2",
     "com.unity.xr.management": "4.5.3",
     "com.xreal.xr": "file:C:/Users/sam/Downloads/com.xreal.xr/package",
