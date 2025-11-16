@@ -1,15 +1,15 @@
 /**
- * Backend Server for Karaoke App
- * This Node.js server handles YouTube audio extraction and subtitle fetching
- * 
- * IMPORTANT: You need to install the following packages:
- * npm install express cors ytdl-core @distube/ytdl-core youtube-captions-scraper
+ * Karaoke Backend Server - Song Library Edition
+ * Manages manually uploaded songs with lyrics
  */
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const ytdl = require('@distube/ytdl-core');
-const { getSubtitles } = require('youtube-captions-scraper');
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
+const songLibrary = require('./song-library');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,186 +17,345 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use('/songs', express.static(path.join(__dirname, 'songs')));
 
-/**
- * Extract audio and subtitles from YouTube video
- */
-app.post('/extract', async (req, res) => {
-    try {
-        const { videoId } = req.body;
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        let folder = 'songs/';
         
-        if (!videoId) {
-            return res.status(400).json({ error: 'Video ID is required' });
+        if (file.fieldname === 'audio') {
+            folder += 'audio/';
+        } else if (file.fieldname === 'thumbnail') {
+            folder += 'thumbnails/';
+        } else if (file.fieldname === 'lyrics') {
+            folder += 'lyrics/';
         }
         
-        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-        
-        // Get video info
-        const info = await ytdl.getInfo(videoUrl);
-        
-        // Get audio format (best audio quality)
-        const audioFormat = ytdl.chooseFormat(info.formats, { 
-            quality: 'highestaudio',
-            filter: 'audioonly'
-        });
-        
-        // Get subtitles/captions
-        let subtitlesData = null;
-        try {
-            const subtitles = await getSubtitles({
-                videoID: videoId,
-                lang: 'en' // You can make this configurable
-            });
-            
-            // Convert to our format
-            if (subtitles && subtitles.length > 0) {
-                const formattedSubtitles = subtitles.map(sub => ({
-                    startTime: parseFloat(sub.start),
-                    endTime: parseFloat(sub.start) + parseFloat(sub.dur),
-                    text: sub.text
-                }));
-                
-                subtitlesData = JSON.stringify({ subtitles: formattedSubtitles });
+        cb(null, folder);
+    },
+    filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+        cb(null, file.fieldname + '-' + uniqueSuffix + path.extname(file.originalname));
+    }
+});
+
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 50 * 1024 * 1024 // 50MB limit
+    },
+    fileFilter: function (req, file, cb) {
+        if (file.fieldname === 'audio') {
+            if (!file.mimetype.startsWith('audio/')) {
+                return cb(new Error('Only audio files are allowed for audio field'));
             }
-        } catch (subError) {
-            console.error('Error fetching subtitles:', subError);
-            // Continue without subtitles
+        } else if (file.fieldname === 'thumbnail') {
+            if (!file.mimetype.startsWith('image/')) {
+                return cb(new Error('Only image files are allowed for thumbnail field'));
+            }
+        } else if (file.fieldname === 'lyrics') {
+            if (file.mimetype !== 'application/json' && !file.originalname.endsWith('.json')) {
+                return cb(new Error('Only JSON files are allowed for lyrics field'));
+            }
         }
-        
-        res.json({
-            audioUrl: audioFormat.url,
-            subtitlesData: subtitlesData,
-            title: info.videoDetails.title,
-            duration: info.videoDetails.lengthSeconds
-        });
-        
-    } catch (error) {
-        console.error('Error extracting video data:', error);
-        res.status(500).json({ 
-            error: 'Failed to extract video data',
-            message: error.message 
-        });
+        cb(null, true);
     }
 });
 
 /**
- * Get video information
+ * Root endpoint - API documentation
  */
-app.get('/video-info/:videoId', async (req, res) => {
-    try {
-        const { videoId } = req.params;
-        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-        
-        const info = await ytdl.getInfo(videoUrl);
-        
-        res.json({
-            title: info.videoDetails.title,
-            duration: info.videoDetails.lengthSeconds,
-            thumbnail: info.videoDetails.thumbnails[0].url,
-            author: info.videoDetails.author.name
-        });
-        
-    } catch (error) {
-        console.error('Error getting video info:', error);
-        res.status(500).json({ 
-            error: 'Failed to get video info',
-            message: error.message 
-        });
-    }
-});
-
-/**
- * Stream audio directly
- */
-app.get('/stream/:videoId', async (req, res) => {
-    try {
-        const { videoId } = req.params;
-        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-        
-        res.header('Content-Type', 'audio/mpeg');
-        
-        ytdl(videoUrl, {
-            filter: 'audioonly',
-            quality: 'highestaudio'
-        }).pipe(res);
-        
-    } catch (error) {
-        console.error('Error streaming audio:', error);
-        res.status(500).json({ 
-            error: 'Failed to stream audio',
-            message: error.message 
-        });
-    }
-});
-
-/**
- * Get available subtitle languages
- */
-app.get('/subtitles/:videoId/languages', async (req, res) => {
-    try {
-        const { videoId } = req.params;
-        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-        
-        const info = await ytdl.getInfo(videoUrl);
-        const captionTracks = info.player_response?.captions?.playerCaptionsTracklistRenderer?.captionTracks || [];
-        
-        const languages = captionTracks.map(track => ({
-            languageCode: track.languageCode,
-            languageName: track.name.simpleText
-        }));
-        
-        res.json({ languages });
-        
-    } catch (error) {
-        console.error('Error getting subtitle languages:', error);
-        res.status(500).json({ 
-            error: 'Failed to get subtitle languages',
-            message: error.message 
-        });
-    }
-});
-
-/**
- * Get subtitles in specific language
- */
-app.get('/subtitles/:videoId/:lang', async (req, res) => {
-    try {
-        const { videoId, lang } = req.params;
-        
-        const subtitles = await getSubtitles({
-            videoID: videoId,
-            lang: lang
-        });
-        
-        if (subtitles && subtitles.length > 0) {
-            const formattedSubtitles = subtitles.map(sub => ({
-                startTime: parseFloat(sub.start),
-                endTime: parseFloat(sub.start) + parseFloat(sub.dur),
-                text: sub.text
-            }));
-            
-            res.json({ subtitles: formattedSubtitles });
-        } else {
-            res.status(404).json({ error: 'No subtitles found for this language' });
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Karaoke API - Song Library Edition',
+        version: '2.0.0',
+        endpoints: {
+            health: {
+                method: 'GET',
+                path: '/health',
+                description: 'Check if API is running'
+            },
+            listSongs: {
+                method: 'GET',
+                path: '/api/songs',
+                description: 'Get all songs in library'
+            },
+            searchSongs: {
+                method: 'GET',
+                path: '/api/songs/search?q=query',
+                description: 'Search songs by title, author, or tags'
+            },
+            getSong: {
+                method: 'GET',
+                path: '/api/songs/:id',
+                description: 'Get song details by ID'
+            },
+            getLyrics: {
+                method: 'GET',
+                path: '/api/songs/:id/lyrics',
+                description: 'Get lyrics for a song'
+            },
+            uploadSong: {
+                method: 'POST',
+                path: '/api/upload',
+                description: '[DISABLED] Songs must be added manually by admin. See MANUAL_SETUP_GUIDE.md'
+            },
+            updateSong: {
+                method: 'PUT',
+                path: '/api/songs/:id',
+                description: 'Update song metadata'
+            },
+            deleteSong: {
+                method: 'DELETE',
+                path: '/api/songs/:id',
+                description: 'Delete a song'
+            },
+            stats: {
+                method: 'GET',
+                path: '/api/stats',
+                description: 'Get library statistics'
+            }
         }
-        
-    } catch (error) {
-        console.error('Error getting subtitles:', error);
-        res.status(500).json({ 
-            error: 'Failed to get subtitles',
-            message: error.message 
-        });
-    }
+    });
 });
 
-// Health check endpoint
+/**
+ * Health check
+ */
 app.get('/health', (req, res) => {
-    res.json({ status: 'OK', message: 'Karaoke API is running' });
+    res.json({
+        status: 'OK',
+        message: 'Karaoke API is running',
+        songsCount: songLibrary.getAllSongs().length
+    });
+});
+
+/**
+ * Get all songs
+ */
+app.get('/api/songs', (req, res) => {
+    try {
+        const songs = songLibrary.getAllSongs();
+        res.json({
+            success: true,
+            count: songs.length,
+            songs: songs
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Search songs
+ */
+app.get('/api/songs/search', (req, res) => {
+    try {
+        const query = req.query.q;
+        
+        if (!query) {
+            return res.status(400).json({
+                success: false,
+                error: 'Search query (q) is required'
+            });
+        }
+
+        const results = songLibrary.searchSongs(query);
+        
+        res.json({
+            success: true,
+            query: query,
+            count: results.length,
+            songs: results
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Get song by ID
+ */
+app.get('/api/songs/:id', (req, res) => {
+    try {
+        const song = songLibrary.getSongById(req.params.id);
+        
+        if (!song) {
+            return res.status(404).json({
+                success: false,
+                error: 'Song not found'
+            });
+        }
+
+        res.json({
+            success: true,
+            song: song
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Get song lyrics
+ */
+app.get('/api/songs/:id/lyrics', (req, res) => {
+    try {
+        const lyrics = songLibrary.getLyrics(req.params.id);
+        
+        if (!lyrics) {
+            return res.status(404).json({
+                success: false,
+                error: 'Lyrics not found'
+            });
+        }
+
+        res.json({
+            success: true,
+            lyrics: lyrics
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Upload new song - DISABLED (Admin only - manual setup)
+ * To add songs, manually edit song-library.json
+ * See MANUAL_SETUP_GUIDE.md for instructions
+ */
+app.post('/api/upload', (req, res) => {
+    res.status(403).json({
+        success: false,
+        error: 'Upload is disabled. Songs must be added manually by admin.',
+        message: 'See MANUAL_SETUP_GUIDE.md for instructions on adding songs.'
+    });
+});
+
+/**
+ * Update song metadata
+ */
+app.put('/api/songs/:id', (req, res) => {
+    try {
+        const { title, author, tags, duration } = req.body;
+        
+        const updates = {};
+        if (title) updates.title = title;
+        if (author) updates.author = author;
+        if (tags) updates.tags = tags.split(',').map(t => t.trim());
+        if (duration) updates.duration = parseFloat(duration);
+
+        const song = songLibrary.updateSong(req.params.id, updates);
+        
+        if (!song) {
+            return res.status(404).json({
+                success: false,
+                error: 'Song not found'
+            });
+        }
+
+        res.json({
+            success: true,
+            message: 'Song updated successfully',
+            song: song
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Delete song
+ */
+app.delete('/api/songs/:id', (req, res) => {
+    try {
+        const deleted = songLibrary.deleteSong(req.params.id);
+        
+        if (!deleted) {
+            return res.status(404).json({
+                success: false,
+                error: 'Song not found'
+            });
+        }
+
+        res.json({
+            success: true,
+            message: 'Song deleted successfully'
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+/**
+ * Get library statistics
+ */
+app.get('/api/stats', (req, res) => {
+    try {
+        const stats = songLibrary.getStats();
+        
+        res.json({
+            success: true,
+            stats: {
+                totalSongs: stats.totalSongs,
+                totalSize: `${(stats.totalSize / 1024 / 1024).toFixed(2)} MB`,
+                uniqueAuthors: stats.uniqueAuthors
+            }
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+// Error handling middleware
+app.use((error, req, res, next) => {
+    if (error instanceof multer.MulterError) {
+        if (error.code === 'LIMIT_FILE_SIZE') {
+            return res.status(400).json({
+                success: false,
+                error: 'File too large. Maximum size is 50MB'
+            });
+        }
+    }
+    
+    res.status(500).json({
+        success: false,
+        error: error.message
+    });
 });
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`Karaoke API server running on port ${PORT}`);
-    console.log(`Health check: http://localhost:${PORT}/health`);
+    console.log('\n' + '═'.repeat(60));
+    console.log('  🎵 Karaoke API - Song Library Edition');
+    console.log('═'.repeat(60));
+    console.log(`\n✓ Server running on port ${PORT}`);
+    console.log(`✓ Songs in library: ${songLibrary.getAllSongs().length}`);
+    console.log(`\n📋 API Documentation: http://localhost:${PORT}/`);
+    console.log(`🏥 Health check: http://localhost:${PORT}/health`);
+    console.log(`🎵 List songs: http://localhost:${PORT}/api/songs`);
+    console.log('\n' + '═'.repeat(60) + '\n');
 });
 
