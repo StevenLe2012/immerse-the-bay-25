@@ -423,72 +423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
---- !u!1001 &222523570
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 622716939}
-    m_Modifications:
-    - target: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_Name
-      value: XR Origin (AR Rig)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
---- !u!4 &222523571 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 222523570}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &298894143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,14 +1199,12 @@ PrefabInstance:
       value: XR Interaction Hands Setup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -2087258414413704946, guid: 3182b5074a6bf3d4887a44a38cbb9cb6, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3063281652878360781, guid: 3182b5074a6bf3d4887a44a38cbb9cb6, type: 3}
       insertIndex: 3
       addedObject: {fileID: 632119552}
-    - targetCorrespondingSourceObject: {fileID: 3063281652878360781, guid: 3182b5074a6bf3d4887a44a38cbb9cb6, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 222523571}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3182b5074a6bf3d4887a44a38cbb9cb6, type: 3}
 --- !u!1 &731141819

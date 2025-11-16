@@ -29,6 +29,7 @@ public class KaraokeManager : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+        SearchKaraoke("Bohemian Rhapsody");
     }
     
     /// <summary>
@@ -143,7 +144,7 @@ public class KaraokeManager : MonoBehaviour
         // YouTube doesn't allow direct audio extraction from client-side
         // You'll need to use yt-dlp or similar on a server
         
-        string backendUrl = "YOUR_BACKEND_SERVER_URL/extract";
+        string backendUrl = "http://localhost:3000/extract";
         string postData = $"{{\"videoId\":\"{videoId}\"}}";
         
         using (UnityWebRequest request = new UnityWebRequest(backendUrl, "POST"))

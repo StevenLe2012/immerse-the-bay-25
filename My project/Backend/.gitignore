@@ -46,3 +46,6 @@ Thumbs.db
 dist/
 build/
 
+
+oauth2-credentials.json
+oauth2-token.json

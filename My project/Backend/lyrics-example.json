@@ -1,0 +1,35 @@
+{
+  "subtitles": [
+    {
+      "startTime": 0.0,
+      "endTime": 2.5,
+      "text": "First line of the song"
+    },
+    {
+      "startTime": 2.5,
+      "endTime": 5.0,
+      "text": "Second line continues here"
+    },
+    {
+      "startTime": 5.0,
+      "endTime": 7.5,
+      "text": "Third line with more lyrics"
+    },
+    {
+      "startTime": 7.5,
+      "endTime": 10.0,
+      "text": "And the song goes on"
+    },
+    {
+      "startTime": 10.0,
+      "endTime": 12.5,
+      "text": "With perfect timing"
+    },
+    {
+      "startTime": 12.5,
+      "endTime": 15.0,
+      "text": "For karaoke display"
+    }
+  ]
+}
+
