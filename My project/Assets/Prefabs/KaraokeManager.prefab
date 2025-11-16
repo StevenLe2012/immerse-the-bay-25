@@ -1970,61 +1970,3302 @@ MonoBehaviour:
 
 
 '
-  - song: test2
-    artist: test2
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+  - song: Blue
+    artist: Yung Kai
+    thumbnailSprite: {fileID: 21300000, guid: dda55bcf094d2b54ea0ba07e37be0ce2, type: 3}
+    audioClip: {fileID: 8300000, guid: cf3dea7b7c5a90a4dad9dc65da13c694, type: 3}
+    lyricsVTT: "WEBVTT\r\n\r\n00:00.00 --> 00:18.71\r\n\r\n\r\n00:18.71 --> 00:26.18\r\nYour
+      morning eyes, I could stare like watching stars\r\n\r\n00:26.18 --> 00:32.39\r\nI
+      could walk you by, and I'll tell without a thought\r\n\r\n00:32.39 --> 00:40.18\r\nYou'd
+      be mine, would you mind if I took your hand tonight?\r\n\r\n00:40.18 --> 00:46.06\r\nKnow
+      you're all that I want this life\r\n\r\n00:46.06 --> 00:47.87\r\n\r\n\r\n00:47.87
+      --> 00:50.57\r\nI'll imagine we fell in love\r\n\r\n00:50.57 --> 00:54.37\r\nI'll
+      nap under moonlight skies with you\r\n\r\n00:54.37 --> 00:58.00\r\nI think
+      I'll picture us, you with the waves\r\n\r\n00:58.00 --> 01:01.86\r\nThe ocean's
+      colors on your face\r\n\r\n01:01.86 --> 01:06.12\r\nI'll leave my heart with
+      your air\r\n\r\n01:06.12 --> 01:09.62\r\nSo let me fly with you\r\n\r\n01:09.62
+      --> 01:14.01\r\nWill you be forever with me?\r\n\r\n01:14.01 --> 01:46.85\r\n\u266A(Guitar
+      Solo)\u266A\r\n\r\n01:46.85 --> 01:52.65\r\nMy love will always stay by you\r\n\r\n01:52.65
+      --> 02:01.52\r\nI'll keep it safe, so don't you worry a thing, I'll tell you
+      I love you more\r\n\r\n02:01.52 --> 02:08.35\r\nIt's stuck with you forever,
+      so promise you won't let it go\r\n\r\n02:08.35 --> 02:16.61\r\nI'll trust the
+      universe will always bring me to you\r\n\r\n02:16.61 --> 02:19.18\r\nI'll imagine
+      we fell in love\r\n\r\n02:19.18 --> 02:23.04\r\nI'll nap under moonlight skies
+      with you\r\n\r\n02:23.04 --> 02:26.67\r\nI think I'll picture us, you with
+      the waves\r\n\r\n02:26.67 --> 02:30.40\r\nThe ocean's colors on your face\r\n\r\n02:30.40
+      --> 02:34.75\r\nI'll leave my heart with your air\r\n\r\n02:34.75 --> 02:38.28\r\nSo
+      let me fly with you\r\n\r\n02:38.28 --> 02:42.58\r\nWill you be forever with
+      me?\r\n\r\n02:42.58 --> 03:28.77\r\n\u266A(Guitar Solo)\u266A\r\n"
+  - song: Chest Pain
+    artist: Malcolm Todd
+    thumbnailSprite: {fileID: 21300000, guid: 9407b047d2483d7448755b3d3ae6f03f, type: 3}
+    audioClip: {fileID: 8300000, guid: 74e7d971db9005246b1926cb6e05cc51, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:00.41 --> 00:05.73
+
+      My chest is
+      hurting, my feet can''t fall out of bed
+
+      
+
+      00:05.73 --> 00:10.45
+
+      I
+      don''t know where to go, so I''ll lay here instead
+
+      
+
+      00:10.45
+      --> 00:15.21
+
+      With my symptoms, symptoms of sorrow and dread
+
+      
+
+      00:15.21
+      --> 00:20.42
+
+      They all said it would fade, but again and again
+
+      
+
+      00:20.42
+      --> 00:25.20
+
+      I love, I love
+
+      
+
+      00:25.20 --> 00:29.99
+
+      I
+      love, I love, I love
+
+      
+
+      00:29.99 --> 00:39.40
+
+      I love,
+      I love, I love
+
+      
+
+      00:41.24 --> 00:44.62
+
+      I''ve been so
+      busy
+
+      
+
+      00:44.62 --> 00:47.22
+
+      But now that I''m alone
+
+      
+
+      00:47.22
+      --> 00:48.09
+
+      Where did you go?
+
+      
+
+      00:48.09 --> 00:52.01
+
+      Tell
+      me why
+
+      
+
+      00:52.01 --> 00:58.87
+
+      Why can''t you live at
+      home tonight and stay with me inside?
+
+      
+
+      00:58.87 --> 01:02.77
+
+      It''s
+      nice
+
+      
+
+      01:02.77 --> 01:07.69
+
+      Please, I wanna see what
+      we would be if you were by my side
+
+      
+
+      01:07.69 --> 01:10.05
+
+      Make
+      me feel lonely, soon
+
+      
+
+      01:10.05 --> 01:14.70
+
+      You might
+      not know me, I wish I could lie
+
+      
+
+      01:14.70 --> 01:16.83
+
+      But
+      I can''t deny
+
+      
+
+      01:17.24 --> 01:22.49
+
+      My chest is hurting,
+      my feet can''t fall out of bed
+
+      
+
+      01:22.49 --> 01:27.29
+
+      I
+      don''t know where to go, so I''ll lay here instead
+
+      
+
+      01:27.29
+      --> 01:31.99
+
+      With my symptoms, symptoms of sorrow and dread
+
+      
+
+      01:31.99
+      --> 01:37.25
+
+      They all said it would fade, but again and again
+
+      
+
+      01:37.25
+      --> 01:41.99
+
+      I love, I love
+
+      
+
+      01:41.99 --> 01:46.79
+
+      I
+      love, I love, I love
+
+      
+
+      01:46.79 --> 01:55.75
+
+      I love,
+      I love, I love
+
+      
+
+      02:16.83 --> 02:20.08
+
+      I''m hurting,
+      I''m stuck in my bed
+
+      
+
+      02:20.08 --> 02:24.83
+
+      I don''t
+      know where to go, so I''ll lay here instead
+
+      
+
+      02:24.83 --> 02:29.64
+
+      With
+      my symptoms, symptoms of sorrow and dread
+
+      
+
+      02:29.64 --> 02:34.93
+
+      They
+      all said it would fade, but again and again
+
+      
+
+      02:34.93 --> 02:39.61
+
+      I
+      love, I love
+
+      
+
+      02:39.61 --> 02:44.46
+
+      I love, I love,
+      I love
+
+      
+
+      02:44.46 --> 02:49.23
+
+      I love, I love
+
+      
+
+      02:49.23
+      --> 02:54.42
+
+      I love, I love, I love
+
+      
+
+'
+  - song: Die With A Smile
+    artist: Lady Gaga & Bruno Mars
+    thumbnailSprite: {fileID: 21300000, guid: 575367a55d93fe643bce2818629b2293, type: 3}
+    audioClip: {fileID: 8300000, guid: 354444278c3d2464bad6a794c613c4cb, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:04.15 --> 00:09.61
+
+      (Ooh, ooh)
+
+      
+
+      00:09.61
+      --> 00:16.12
+
+      I, I just woke up from a dream
+
+      
+
+      00:16.12
+      --> 00:20.85
+
+      Where you and I had to say goodbye
+
+      
+
+      00:20.85
+      --> 00:25.25
+
+      And I don''t know what it all means
+
+      
+
+      00:25.25
+      --> 00:29.26
+
+      But since I survived, I realized
+
+      
+
+      00:29.26
+      --> 00:34.65
+
+      Wherever you go, that''s where I''ll follow
+
+      
+
+      00:34.65
+      --> 00:38.78
+
+      Nobody''s promised tomorrow
+
+      
+
+      00:38.78
+      --> 00:42.97
+
+      So I''ma love you every night like it''s the last night
+
+      
+
+      00:42.97
+      --> 00:45.30
+
+      Like it''s the last night
+
+      
+
+      00:45.30 -->
+      00:48.18
+
+      If the world was ending
+
+      
+
+      00:48.18 --> 00:54.30
+
+      I''d
+      wanna be next to you
+
+      
+
+      00:54.30 --> 00:56.95
+
+      If the
+      party was over
+
+      
+
+      00:56.95 --> 01:03.50
+
+      And our time
+      on Earth was through
+
+      
+
+      01:03.50 --> 01:08.17
+
+      I''d wanna
+      hold you just for a while
+
+      
+
+      01:08.17 --> 01:12.70
+
+      And
+      die with a smile
+
+      
+
+      01:12.70 --> 01:15.59
+
+      If the world
+      was ending
+
+      
+
+      01:15.59 --> 01:21.50
+
+      I''d wanna be next
+      to you
+
+      
+
+      01:21.50 --> 01:26.05
+
+      (Ooh, ooh)
+
+      
+
+      01:26.05
+      --> 01:33.78
+
+      Ooh, lost, lost in the words that we scream
+
+      
+
+      01:33.78
+      --> 01:38.12
+
+      I don''t even wanna do this anymore
+
+      
+
+      01:38.12
+      --> 01:41.90
+
+      ''Cause you already know what you mean to me
+
+      
+
+      01:41.90
+      --> 01:47.30
+
+      And our love''s the only one worth fighting for
+
+      
+
+      01:47.30
+      --> 01:51.97
+
+      Wherever you go, that''s where I''ll follow
+
+      
+
+      01:51.97
+      --> 01:56.23
+
+      Nobody''s promised tomorrow
+
+      
+
+      01:56.23
+      --> 02:00.24
+
+      So I''ma love you every night like it''s the last night
+
+      
+
+      02:00.24
+      --> 02:02.66
+
+      Like it''s the last night
+
+      
+
+      02:02.66 -->
+      02:05.67
+
+      If the world was ending
+
+      
+
+      02:05.67 --> 02:11.77
+
+      I''d
+      wanna be next to you
+
+      
+
+      02:11.77 --> 02:14.45
+
+      If the
+      party was over
+
+      
+
+      02:14.45 --> 02:20.90
+
+      And our time
+      on Earth was through
+
+      
+
+      02:20.90 --> 02:25.59
+
+      I''d wanna
+      hold you just for a while
+
+      
+
+      02:25.59 --> 02:29.92
+
+      And
+      die with a smile
+
+      
+
+      02:29.92 --> 02:33.09
+
+      If the world
+      was ending
+
+      
+
+      02:33.09 --> 02:38.52
+
+      I''d wanna be next
+      to you
+
+      
+
+      02:38.52 --> 02:43.36
+
+      Right next to you
+
+      
+
+      02:43.36
+      --> 02:48.04
+
+      Next to you
+
+      
+
+      02:48.04 --> 02:51.42
+
+      Right
+      next to you
+
+      
+
+      02:51.42 --> 03:10.72
+
+      Oh-oh
+
+      
+
+      03:10.72
+      --> 03:13.90
+
+      If the world was ending
+
+      
+
+      03:13.90 -->
+      03:20.09
+
+      I''d wanna be next to you
+
+      
+
+      03:20.09 --> 03:22.82
+
+      If
+      the party was over
+
+      
+
+      03:22.82 --> 03:28.97
+
+      And our time
+      on Earth was through
+
+      
+
+      03:28.97 --> 03:33.79
+
+      I''d wanna
+      hold you just for a while
+
+      
+
+      03:33.79 --> 03:38.26
+
+      And
+      die with a smile
+
+      
+
+      03:38.26 --> 03:41.20
+
+      If the world
+      was ending
+
+      
+
+      03:41.20 --> 03:47.18
+
+      I''d wanna be next
+      to you
+
+      
+
+      03:47.18 --> 03:50.29
+
+      If the world was ending
+
+      
+
+      03:50.29
+      --> 03:56.24
+
+      I''d wanna be next to you
+
+      
+
+      03:56.24 -->
+      03:59.30
+
+      (Ooh, ooh)
+
+      
+
+      03:59.30 --> 04:23.00
+
+      I''d
+      wanna be next to you
+
+      
+
+'
+  - song: Golden
+    artist: Huntrix
+    thumbnailSprite: {fileID: 21300000, guid: f7ab21755ce11024db184df1bc39a246, type: 3}
+    audioClip: {fileID: 8300000, guid: 4150e8e2f179d784ebb39ad8081c3f7b, type: 3}
+    lyricsVTT: "WEBVTT\r\n\r\n00:16.05 --> 00:17.12\r\nI was a ghost\r\n\r\n00:17.12
+      --> 00:19.00\r\nI was alone, ha\r\n\r\n00:19.00 --> 00:21.07\r\n\uC5B4\uB450\uC6CC\uC9C4
+      Ha\r\n\r\n00:21.07 --> 00:23.90\r\n\uC55E\uAE38 \uC18D\uC5D0\r\n\r\n00:23.90
+      --> 00:24.88\r\nGiven the throne\r\n\r\n00:24.88 --> 00:26.10\r\nI didn't know\r\n\r\n00:26.10
+      --> 00:28.03\r\nHow to believe\r\n\r\n00:28.03 --> 00:30.79\r\nI was the queen
+      that I'm meant to be\r\n\r\n00:30.79 --> 00:32.48\r\nI lived two lives\r\n\r\n00:32.48
+      --> 00:34.61\r\nTried to play both sides\r\n\r\n00:34.61 --> 00:38.30\r\nBut
+      I couldn't find my own place\r\n\r\n00:38.30 --> 00:40.32\r\nCalled a problem
+      child\r\n\r\n00:40.32 --> 00:42.51\r\n'Cause I got too wild\r\n\r\n00:42.51
+      --> 00:45.57\r\nBut now that's how I'm getting paid\r\n\r\n00:45.57 --> 00:46.78\r\n\uB05D\uC5C6\uC774
+      On stage\r\n\r\n00:46.78 --> 00:54.12\r\nI'm done hiding, now I'm shining like
+      I'm born to be\r\n\r\n00:54.12 --> 01:01.51\r\nWe dreamin' hard, we came so
+      far, now I believe\r\n\r\n01:01.51 --> 01:03.78\r\nWe're goin' up, up, up\r\n\r\n01:03.78
+      --> 01:05.38\r\nIt's our moment\r\n\r\n01:05.38 --> 01:07.35\r\nYou know together
+      we're glowing\r\n\r\n01:07.35 --> 01:09.25\r\nGonna be, gonna be golden\r\n\r\n01:09.25
+      --> 01:11.58\r\nOh, up, up, up\r\n\r\n01:11.58 --> 01:13.25\r\nWith our voices\r\n\r\n01:13.25
+      --> 01:15.16\r\n\uC601\uC6D0\uD788 \uAE68\uC9C8 \uC218 \uC5C6\uB294\r\n\r\n01:15.16
+      --> 01:17.10\r\nGonna be, gonna be golden\r\n\r\n01:17.10 --> 01:25.34\r\nOh,
+      I'm done hiding, now I'm shining like I'm born to be\r\n\r\n01:25.34 --> 01:33.12\r\nOh,
+      our time, no fears, no lies, that's who we're born to be\r\n\r\n01:35.05 -->
+      01:39.15\r\nWaited so long to break these walls down\r\n\r\n01:39.15 --> 01:43.14\r\nTo
+      wake up and feel like me\r\n\r\n01:43.14 --> 01:47.00\r\nPut these patterns
+      all in the past now\r\n\r\n01:47.00 --> 01:50.60\r\nAnd finally live like the
+      girl they all see\r\n\r\n01:51.60 --> 01:59.18\r\nNo more hiding, I'll be shining
+      like I'm born to be\r\n\r\n01:59.18 --> 02:06.95\r\n'Cause we are hunters,
+      voices strong, and I know I believe\r\n\r\n02:06.95 --> 02:09.27\r\nWe're goin'
+      up, up, up\r\n\r\n02:09.27 --> 02:10.90\r\nIt's our moment\r\n\r\n02:10.90
+      --> 02:12.82\r\nYou know together we're glowing\r\n\r\n02:12.82 --> 02:14.72\r\nGonna
+      be, gonna be golden\r\n\r\n02:14.72 --> 02:17.10\r\nOh, up, up, up\r\n\r\n02:17.10
+      --> 02:18.70\r\nWith our voices\r\n\r\n02:18.70 --> 02:20.64\r\n\uC601\uC6D0\uD788
+      \uAE68\uC9C8 \uC218 \uC5C6\uB294\r\n\r\n02:20.64 --> 02:22.60\r\nGonna be,
+      gonna be golden\r\n\r\n02:22.60 --> 02:30.82\r\nOh, I'm done hiding, now I'm
+      shining like I'm born to be\r\n\r\n02:30.82 --> 02:38.07\r\nOh, our time, no
+      fears, no lies, that's who we're born to be\r\n\r\n02:38.20 --> 02:39.18\r\nYou
+      know we're\r\n\r\n02:39.18 --> 02:40.92\r\nGonna be, gonna be golden\r\n\r\n02:40.92
+      --> 02:43.00\r\nWe're gonna be, gonna be\r\n\r\n02:43.00 --> 02:44.91\r\nBorn
+      to be, born to be glowin'\r\n\r\n02:44.91 --> 02:46.32\r\n\uBC1D\uAC8C \uBE5B\uB098\uB294
+      \uC6B0\uB9AC\r\n\r\n02:46.32 --> 02:54.55\r\nYou know that it's our time, no
+      fears, no lies, that's who we're born to be\r\n"
+  - song: Heather
+    artist: Conan Gray
+    thumbnailSprite: {fileID: 21300000, guid: cbe15846f43511c4db666f54bb01710b, type: 3}
+    audioClip: {fileID: 8300000, guid: 81a143c1046bbdd41b2eb62fef53e712, type: 3}
+    lyricsVTT: "WEBVTT\r\n\r\n00:03.000 --> 00:24.233\r\n\u266A \u266A\r\n\r\n00:24.233
+      --> 00:27.300\r\ni still remember\r\n\r\n00:27.300 --> 00:29.466\r\nthird of
+      december\r\n\r\n00:29.466 --> 00:32.033\r\nme in your sweater\r\n\r\n00:32.033
+      --> 00:34.365\r\nyou said it looked better\r\n\r\n00:34.365 --> 00:37.232\r\non
+      me, than it did you\r\n\r\n00:37.232 --> 00:40.000\r\nonly if you knew\r\n\r\n00:40.000
+      --> 00:42.432\r\nhow much i liked you\r\n\r\n00:42.432 --> 00:45.466\r\nbut
+      i watch your eyes, as she\r\n\r\n00:45.466 --> 00:47.966\r\nwalks by\r\n\r\n00:47.966
+      --> 00:50.732\r\nwhat a sight for\r\n\r\n00:50.732 --> 00:53.133\r\nsore eyes\r\n\r\n00:53.133
+      --> 00:56.000\r\nbrighter than a\r\n\r\n00:56.000 --> 00:58.332\r\nblue sky\r\n\r\n00:58.332
+      --> 01:00.566\r\nshe's got you\r\n\r\n01:00.566 --> 01:03.432\r\nmesmerized\r\n\r\n01:03.432
+      --> 01:06.132\r\nwhile i die\r\n\r\n01:06.132 --> 01:11.000\r\nwhy would you
+      ever kiss me?\r\n\r\n01:11.000 --> 01:16.132\r\ni'm not even half, as pretty\r\n\r\n01:16.132
+      --> 01:18.832\r\nyou gave her your sweater\r\n\r\n01:18.832 --> 01:24.299\r\nit's
+      just polyester, but you like her better\r\n\r\n01:24.299 --> 01:27.200\r\nwish
+      i were heather\r\n\r\n01:27.200 --> 01:29.500\r\nwatch as she stands with\r\n\r\n01:29.500
+      --> 01:31.632\r\nher holding your hand\r\n\r\n01:31.632 --> 01:34.033\r\nput
+      your arm 'round her shoulder\r\n\r\n01:34.033 --> 01:37.132\r\nnow i'm getting
+      colder\r\n\r\n01:37.132 --> 01:39.299\r\nbut how could i hate her?\r\n\r\n01:39.299
+      --> 01:42.365\r\nshe's such an angel\r\n\r\n01:42.365 --> 01:45.233\r\nbut
+      then again, kinda\r\n\r\n01:45.233 --> 01:48.066\r\nwish she were dead, as
+      she\r\n\r\n01:48.066 --> 01:50.433\r\nwalks by\r\n\r\n01:50.433 --> 01:53.233\r\nwhat
+      a sight for\r\n\r\n01:53.233 --> 01:55.865\r\nsore eyes\r\n\r\n01:55.865 -->
+      01:58.700\r\nbrighter than a\r\n\r\n01:58.700 --> 02:01.033\r\nblue sky\r\n\r\n02:01.033
+      --> 02:03.465\r\nshe's got you\r\n\r\n02:03.465 --> 02:06.066\r\nmesmerized\r\n\r\n02:06.066
+      --> 02:08.699\r\nwhile i die\r\n\r\n02:08.699 --> 02:14.099\r\nwhy would you
+      ever kiss me?\r\n\r\n02:14.099 --> 02:17.765\r\ni'm not even half, as pretty\r\n\r\n02:17.765
+      --> 02:21.532\r\nyou gave her your sweater\r\n\r\n02:21.532 --> 02:26.932\r\nit's
+      just polyester,but you like her better\r\n\r\n02:26.932 --> 02:30.532\r\ni
+      wish i were heather\r\n\r\n02:30.532 --> 02:37.665\r\n\u266A \u266A\r\n\r\n02:37.665
+      --> 02:40.366\r\nwish i were heather\r\n\r\n02:40.366 --> 02:47.733\r\n\u266A
+      \u266A\r\n\r\n02:47.733 --> 02:50.665\r\nwish i were heather\r\n\r\n02:50.665
+      --> 02:55.466\r\nwhy would you ever kiss me?\r\n\r\n02:55.466 --> 03:00.665\r\ni'm
+      not even half as pretty\r\n\r\n03:00.665 --> 03:03.566\r\nyou gave her your
+      sweater\r\n\r\n03:03.566 --> 03:09.099\r\nit's just polyester, but you like
+      her better\r\n\r\n03:09.099 --> 03:11.900\r\nwish i were\r\n\r\n03:11.900 -->
+      03:20.00\r\n\u266A \u266A\r\n\r\n"
+  - song: Luther
+    artist: Kendrick Lamar
+    thumbnailSprite: {fileID: 21300000, guid: 9f294a2505061432c9f6abb3147060fb, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+    lyricsVTT: "WEBVTT\r\n\r\n00:09.98 --> 00:12.72\r\nIf this world were mine\r\n\r\n00:12.49
+      --> 00:16.02\r\nHey, Roman numeral seven, bae, drop it like it's hot\r\n\r\n00:16.02
+      --> 00:19.47\r\nIf this world was mine, I'd take your dreams and make them
+      multiply\r\n\r\n00:19.47 --> 00:22.97\r\nIf this world was mine, I'd take your
+      enemies in front of God\r\n\r\n00:22.97 --> 00:27.02\r\nIntroduce them to that
+      light, hit them strictly with that fire\r\n\r\n00:27.02 --> 00:33.32\r\nFah-fah,
+      fah-fah-fah, fah-fah, fah\r\n\r\n00:33.32 --> 00:36.85\r\nHey, Roman numeral
+      seven, bae, drop it like it's hot\r\n\r\n00:36.85 --> 00:40.32\r\nIf this world
+      was mine, I'd take your dreams and make them multiply\r\n\r\n00:40.32 --> 00:43.82\r\nIf
+      this world was mine, I'd take your enemies in front of God\r\n\r\n00:43.82
+      --> 00:47.27\r\nIntroduce them to that light, hit them strictly with that fire\r\n\r\n00:47.27
+      --> 00:49.83\r\nIt's a vibe, do your dance, let 'em watch\r\n\r\n00:49.83 -->
+      00:53.71\r\nShe a fan, he a flop, they just wanna kumbaya, nah\r\n\r\n00:53.71
+      --> 00:57.22\r\nIn this world, concrete flowers grow\r\n\r\n00:57.22 --> 01:00.72\r\nHeartache,
+      she only doing what she know\r\n\r\n01:00.72 --> 01:04.21\r\nWeekends, get
+      it poppin' on the low\r\n\r\n01:04.21 --> 01:05.96\r\nBetter days comin' for
+      sure\r\n\r\n01:05.96 --> 01:09.52\r\nIf this world were\u2014\r\n\r\n01:09.52
+      --> 01:11.41\r\nIf it was up to me\r\n\r\n01:11.41 --> 01:14.93\r\nI wouldn't
+      give these nobodies no sympathy\r\n\r\n01:14.93 --> 01:19.61\r\nI'd take away
+      the pain, I'd give you everything\r\n\r\n01:19.61 --> 01:21.17\r\nI just wanna
+      see you win, wanna see\r\n\r\n01:21.17 --> 01:23.87\r\nIf this world were mine\r\n\r\n01:22.88
+      --> 01:26.85\r\nIt go in, out, do it real slow\r\n\r\n01:26.85 --> 01:30.33\r\nBaby,
+      you a star, strike a pose\r\n\r\n01:30.33 --> 01:33.80\r\nWhen I'm with you,
+      everything goes\r\n\r\n01:33.80 --> 01:37.30\r\nCome and put that on my soul\r\n\r\n01:37.30
+      --> 01:40.72\r\n'Rari, crown, wrist froze\r\n\r\n01:40.72 --> 01:44.27\r\nDrip,
+      pound on the way home\r\n\r\n01:44.07 --> 01:47.68\r\nIn this world, concrete
+      flowers grow\r\n\r\n01:47.68 --> 01:51.20\r\nHeartache, she only doing what
+      she know\r\n\r\n01:51.20 --> 01:54.62\r\nWeekends, get it poppin' on the low\r\n\r\n01:54.62
+      --> 01:56.21\r\nBetter days comin' for sure\r\n\r\n01:56.21 --> 01:59.91\r\nIf
+      this world were\u2014\r\n\r\n01:59.91 --> 02:01.83\r\nIf it was up to me\r\n\r\n02:01.83
+      --> 02:05.33\r\nI wouldn't give these nobodies no sympathy\r\n\r\n02:05.33
+      --> 02:10.04\r\nI'd take away the pain, I'd give you everything\r\n\r\n02:10.04
+      --> 02:11.63\r\nI just wanna see you win, wanna see\r\n\r\n02:11.63 --> 02:14.24\r\nIf
+      this world were mine\r\n\r\n02:13.40 --> 02:14.23\r\nI can't lie\r\n\r\n02:14.23
+      --> 02:17.07\r\nI trust you, I love you, I won't waste your time\r\n\r\n02:17.07
+      --> 02:19.88\r\nI turn it off just so I can turn you on\r\n\r\n02:19.88 -->
+      02:22.49\r\nI'ma make you say it loud\r\n\r\n02:22.49 --> 02:25.95\r\nI'm not
+      even trippin', I won't stress you out\r\n\r\n02:25.95 --> 02:29.92\r\nI might
+      even settle down for you, I'ma show you I'm a pro\r\n\r\n02:29.92 --> 02:32.07\r\nI'ma
+      take my time and turn it off\r\n\r\n02:32.07 --> 02:34.62\r\nJust so I can
+      turn you on, baby\r\n\r\n02:34.62 --> 02:38.13\r\nWeekends, get it poppin'
+      on the low\r\n\r\n02:38.13 --> 02:40.15\r\nBetter days comin' for sure\r\n\r\n02:39.23
+      --> 02:40.16\r\nI know you're com\u2013\r\n\r\n02:40.16 --> 02:41.78\r\nI know
+      you're comin' for\u2013\r\n\r\n02:47.74 --> 02:53.37\r\nBetter days\r\n\r\n02:53.37
+      --> 02:56.10\r\nIf this world were mine\r\n\r\n"
+  - song: Ordinary
+    artist: Alex Warren
+    thumbnailSprite: {fileID: 21300000, guid: 6df39569a7adf413c8b558adc927cac0, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:08.14 --> 00:14.19
+
+      They say the
+      holy water''s watered down and this town''s lost its faith
+
+      
+
+      00:14.19
+      --> 00:17.36
+
+      Our colors will fade eventually
+
+      
+
+      00:17.36
+      --> 00:22.71
+
+      So if our time is running out day after day
+
+      
+
+      00:22.71
+      --> 00:26.34
+
+      We''ll make the mundane our masterpiece
+
+      
+
+      00:26.67
+      --> 00:30.46
+
+      Oh my, my, oh my, my
+
+      
+
+      00:30.46 --> 00:34.08
+
+      Love,
+      I take one look at you
+
+      
+
+      00:34.04 --> 00:37.94
+
+      You''re
+      taking me out of the ordinary
+
+      
+
+      00:37.94 --> 00:42.31
+
+      I
+      want you laying me down till we''re dead and buried
+
+      
+
+      00:42.31
+      --> 00:47.37
+
+      On the edge of your knife, staying drunk on your vine
+
+      
+
+      00:47.37
+      --> 00:51.29
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+      00:51.29
+      --> 00:54.93
+
+      Something so out of the ordinary
+
+      
+
+      00:54.93
+      --> 00:59.39
+
+      You got me kissing the ground of your sanctuary
+
+      
+
+      00:59.39
+      --> 01:04.49
+
+      Shatter me with your touch, oh Lord, return me to dust
+
+      
+
+      01:04.49
+      --> 01:09.52
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+      01:10.02
+      --> 01:14.30
+
+      Hopeless hallelujah
+
+      
+
+      01:14.30 --> 01:18.65
+
+      Oh,
+      this side of Heaven''s gate
+
+      
+
+      01:18.65 --> 01:22.96
+
+      Oh,
+      my life, how do ya
+
+      
+
+      01:22.96 --> 01:28.01
+
+      Breathe and
+      take my breath away?
+
+      
+
+      01:28.01 --> 01:30.20
+
+      At your
+      altar, I will pray
+
+      
+
+      01:30.20 --> 01:32.20
+
+      You''re the
+      sculptor, I''m the clay
+
+      
+
+      01:32.85 --> 01:34.05
+
+      Oh my,
+      my
+
+      
+
+      01:34.05 --> 01:37.91
+
+      You''re taking me out of
+      the ordinary
+
+      
+
+      01:37.91 --> 01:42.19
+
+      I want you laying
+      me down till we''re dead and buried
+
+      
+
+      01:42.19 --> 01:47.34
+
+      On
+      the edge of your knife, staying drunk on your vine
+
+      
+
+      01:47.34
+      --> 01:51.30
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+      01:51.30
+      --> 01:55.10
+
+      Something so out of the ordinary
+
+      
+
+      01:55.10
+      --> 01:59.32
+
+      You got me kissing the ground of your sanctuary
+
+      
+
+      01:59.32
+      --> 02:04.57
+
+      Shatter me with your touch, oh Lord, return me to dust
+
+      
+
+      02:04.57
+      --> 02:09.37
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+      02:09.49
+      --> 02:11.62
+
+      Something so heavenly
+
+      
+
+      02:11.62 --> 02:16.07
+
+      Higher
+      than ecstasy whenever you''re next to me
+
+      
+
+      02:16.07 --> 02:22.34
+
+      Oh
+      my, my world was in black and white until I saw your light
+
+      
+
+      02:22.34
+      --> 02:26.68
+
+      I thought you had to die to find something so out
+
+      
+
+      02:26.96
+      --> 02:29.29
+
+      Of the ordinary
+
+      
+
+      02:29.29 --> 02:33.61
+
+      I
+      want you laying me down till we''re dead and buried
+
+      
+
+      02:33.61
+      --> 02:38.81
+
+      On the edge of your knife, staying drunk on your vine
+
+      
+
+      02:38.81
+      --> 02:42.69
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+      02:42.69
+      --> 02:46.51
+
+      Something so out of the ordinary
+
+      
+
+      02:46.51
+      --> 02:50.76
+
+      You got me kissing the ground of your sanctuary
+
+      
+
+      02:50.76
+      --> 02:55.95
+
+      Shatter me with your touch, oh Lord, return me to dust
+
+      
+
+      02:55.95
+      --> 03:00.84
+
+      The angels up in the clouds are jealous knowing we found
+
+      
+
+'
+  - song: Party 4 U
+    artist: Charli xcx
+    thumbnailSprite: {fileID: 21300000, guid: 860574afe54e9e245b531309d4c8672e, type: 3}
+    audioClip: {fileID: 8300000, guid: f53bccba758658b479daf4c31cdc2075, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:24.74 --> 00:27.26
+
+      I only threw
+      this party for you
+
+      
+
+      00:27.26 --> 00:31.06
+
+      Only threw
+      this party for you, for you, for you
+
+      
+
+      00:31.06 --> 00:33.34
+
+      I
+      was hopin'' you would come through
+
+      
+
+      00:33.34 --> 00:37.10
+
+      I
+      was hopin'' you would come through, it''s true, it''s true
+
+      
+
+      00:37.10
+      --> 00:39.24
+
+      Only threw this party for you
+
+      
+
+      00:39.24
+      --> 00:43.16
+
+      I only threw this party for you, for you, for you
+
+      
+
+      00:43.16
+      --> 00:45.40
+
+      I''m about to party on you
+
+      
+
+      00:45.40 -->
+      00:47.85
+
+      Watch me, watch me party on you, yeah
+
+      
+
+      00:48.41
+      --> 00:51.46
+
+      1000 pink balloons, DJ with your favorite tunes
+
+      
+
+      00:51.46
+      --> 00:54.48
+
+      Birthday cake in August, but you were born 19th of June
+
+      
+
+      00:54.48
+      --> 00:57.34
+
+      Champagne pourin'' in your mouth, called your friends
+      from out of town
+
+      
+
+      00:57.34 --> 01:00.56
+
+      Got the party
+      bag with the purple pills and I''m waiting for you by the window, yeah
+
+      
+
+      01:00.56
+      --> 01:03.50
+
+      Called your digits, but the phone kept ringin''
+
+      
+
+      01:03.50
+      --> 01:06.63
+
+      Wish I knew what you were thinking, na-na-na
+
+      
+
+      01:06.63
+      --> 01:09.58
+
+      1000 pink balloons, dancin'' on to your favorite tunes
+
+      
+
+      01:09.58
+      --> 01:12.98
+
+      Hope you walk in the party, ''cause I threw the party
+      just for you, like whoa
+
+      
+
+      01:13.14 --> 01:15.64
+
+      I only
+      threw this party for you
+
+      
+
+      01:15.64 --> 01:19.38
+
+      Only
+      threw this party for you, for you, for you
+
+      
+
+      01:19.38 --> 01:21.62
+
+      I
+      was hopin'' you would come through
+
+      
+
+      01:21.62 --> 01:25.44
+
+      I
+      was hopin'' you would come through, it''s true, it''s true
+
+      
+
+      01:25.44
+      --> 01:27.54
+
+      Only threw this party for you
+
+      
+
+      01:27.54
+      --> 01:31.46
+
+      I only threw this party for you, for you, for you
+
+      
+
+      01:31.46
+      --> 01:33.71
+
+      I''m about to party on you
+
+      
+
+      01:33.71 -->
+      01:36.14
+
+      Watch me, watch me party on you, yeah
+
+      
+
+      01:36.06
+      --> 01:38.68
+
+      You could watch me pull up on your body like it''s summer
+
+      
+
+      01:38.68
+      --> 01:40.18
+
+      Take my clothes off in the water
+
+      
+
+      01:40.18
+      --> 01:42.46
+
+      Splash around and get you blessed like holy water
+
+      
+
+      01:42.46
+      --> 01:46.34
+
+      I don''t know what you were waiting for, you know that
+      I''ve been waiting for you
+
+      
+
+      01:46.34 --> 01:47.88
+
+      I
+      only threw this party for you
+
+      
+
+      01:47.88 --> 01:51.12
+
+      Yeah,
+      if you saw my tears, would you touch me?
+
+      
+
+      01:51.12 --> 01:54.10
+
+      Kiss
+      me on the mouth, say you love me?
+
+      
+
+      01:54.10 --> 01:56.42
+
+      Leave
+      a message, tell me you''re sorry?
+
+      
+
+      01:56.42 --> 01:58.70
+
+      Hit
+      me right back, hit me right back
+
+      
+
+      01:58.70 --> 02:01.48
+
+      Why
+      you treating me like someone that you never loved?
+
+      
+
+      02:01.48
+      --> 02:03.92
+
+      I only threw this party for you
+
+      
+
+      02:03.92
+      --> 02:07.72
+
+      Only threw this party for you, for you, for you
+
+      
+
+      02:07.72
+      --> 02:09.98
+
+      I was hopin'' you would come through
+
+      
+
+      02:09.98
+      --> 02:13.74
+
+      I was hopin'' you would come through, it''s true, it''s
+      true
+
+      
+
+      02:13.74 --> 02:15.86
+
+      Only threw this party for
+      you
+
+      
+
+      02:15.86 --> 02:19.82
+
+      I only threw this party
+      for you, for you, for you
+
+      
+
+      02:19.82 --> 02:22.06
+
+      I''m
+      about to party on you
+
+      
+
+      02:22.06 --> 02:24.39
+
+      Watch
+      me, watch me party on you, yeah
+
+      
+
+      02:25.62 --> 02:28.08
+
+      I
+      only threw this party for you
+
+      
+
+      02:28.08 --> 02:31.88
+
+      Only
+      threw this party for you, for you, for you
+
+      
+
+      02:31.88 --> 02:34.12
+
+      I
+      was hopin'' you would come through
+
+      
+
+      02:34.12 --> 02:37.92
+
+      I
+      was hopin'' you would come through, it''s true, it''s true
+
+      
+
+      02:37.92
+      --> 02:40.04
+
+      Only threw this party for you
+
+      
+
+      02:40.04
+      --> 02:43.96
+
+      I only threw this party for you, for you, for you
+
+      
+
+      02:43.96
+      --> 02:46.22
+
+      I''m about to party on you
+
+      
+
+      02:46.22 -->
+      02:48.62
+
+      Watch me, watch me party on you, yeah
+
+      
+
+      02:49.28
+      --> 02:52.36
+
+      Party on you, party on you, party on
+
+      
+
+      02:52.36
+      --> 02:55.36
+
+      Party on you, party on you, party on
+
+      
+
+      02:55.36
+      --> 02:58.36
+
+      Party on you, party on you, party on
+
+      
+
+      02:58.36
+      --> 03:01.38
+
+      Party on you, party on you, party on
+
+      
+
+      03:01.38
+      --> 03:04.38
+
+      Party on you, party on you, party on
+
+      
+
+      03:04.38
+      --> 03:07.42
+
+      Party on you, party on you, party on
+
+      
+
+      03:07.42
+      --> 03:10.44
+
+      Party on you, party on you, party on
+
+      
+
+      03:10.44
+      --> 03:13.46
+
+      Party on you, party on you, party on
+
+      
+
+      03:13.46
+      --> 03:16.48
+
+      Party on you, party on you, party on
+
+      
+
+      03:16.48
+      --> 03:19.50
+
+      Party on you, party on you, party on
+
+      
+
+      03:19.50
+      --> 03:22.52
+
+      Party on you, party on you, party on
+
+      
+
+      03:22.52
+      --> 03:25.53
+
+      Party on you, party on you, party on
+
+      
+
+      03:24.82
+      --> 03:30.82
+
+      Come to my party
+
+      
+
+      03:30.82 --> 03:37.41
+
+      Come
+      to my party
+
+      
+
+      03:37.41 --> 03:40.48
+
+      All I''m thinking,
+      all I know is
+
+      
+
+      03:40.48 --> 03:43.51
+
+      That I hope you
+      knock on my door
+
+      
+
+      03:43.51 --> 03:46.51
+
+      Nervous energy,
+      my heart rate
+
+      
+
+      03:46.51 --> 03:49.12
+
+      Rises higher,
+      higher up
+
+      
+
+      03:49.12 --> 03:52.14
+
+      I wish you''d get
+      here, kiss my face
+
+      
+
+      03:52.14 --> 03:55.22
+
+      Instead,
+      you''re somewhere far away
+
+      
+
+      03:55.22 --> 03:58.22
+
+      My
+      nervous energy will stay
+
+      
+
+      03:58.22 --> 04:03.96
+
+      I hope
+      you realize one day, uh
+
+      
+
+      04:03.96 --> 04:10.06
+
+      Come
+      to my party
+
+      
+
+      04:10.06 --> 04:15.72
+
+      Come to my party
+
+      
+
+      04:13.81
+      --> 04:16.84
+
+      Party on you, party on you, party on
+
+      
+
+      04:16.84
+      --> 04:19.88
+
+      Party on you, party on you, party on
+
+      
+
+      04:19.88
+      --> 04:22.90
+
+      Party on you, party on you, party on
+
+      
+
+      04:22.90
+      --> 04:25.94
+
+      Party on you, party on you, party on
+
+      
+
+      04:25.94
+      --> 04:28.98
+
+      Party on you, party on you, party on
+
+      
+
+      04:28.98
+      --> 04:32.00
+
+      Party on you, party on you, party on
+
+      
+
+      04:32.00
+      --> 04:35.02
+
+      Party on you, party on you, party on
+
+      
+
+      04:35.02
+      --> 04:38.04
+
+      Party on you, party on you, party on
+
+      
+
+      04:38.04
+      --> 04:41.08
+
+      Party on you, party on you, party on
+
+      
+
+      04:41.08
+      --> 04:44.10
+
+      Party on you, party on you, party on
+
+      
+
+      04:44.10
+      --> 04:47.12
+
+      Party on you, party on you, party on
+
+      
+
+      04:47.12
+      --> 04:48.64
+
+      Party on you
+
+      
+
+'
+  - song: Rewrite the Stars
+    artist: Zac Efron and Zendaya
+    thumbnailSprite: {fileID: 21300000, guid: 2fe85c2e8b43a4b759a19dd15a1de37a, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:01.94 --> 00:06.04
+
+      You know I
+      want you
+
+      
+
+      00:06.04 --> 00:09.74
+
+      It''s not a secret
+      I try to hide
+
+      
+
+      00:09.74 --> 00:13.18
+
+      You know you want
+      me
+
+      
+
+      00:13.18 --> 00:17.04
+
+      So don''t keep saying our
+      hands are tied
+
+      
+
+      00:17.04 --> 00:19.40
+
+      You claim it''s
+      not in the cards
+
+      
+
+      00:19.40 --> 00:22.43
+
+      And fate is
+      pulling you miles away
+
+      
+
+      00:22.43 --> 00:24.84
+
+      And out
+      of a reach from me
+
+      
+
+      00:24.84 --> 00:26.71
+
+      But you''re
+      hearing my heart
+
+      
+
+      00:26.71 --> 00:28.40
+
+      So who can
+      stop me if I decide it''s on my destiny?
+
+      
+
+      00:34.94 --> 00:38.92
+
+      What
+      if we rewrite the stars?
+
+      
+
+      00:38.92 --> 00:42.76
+
+      Say
+      you were made to be mine
+
+      
+
+      00:42.76 --> 00:46.40
+
+      Nothing
+      could keep us apart
+
+      
+
+      00:46.40 --> 00:50.07
+
+      You''ll
+      be the one I was meant to find
+
+      
+
+      00:50.07 --> 00:54.06
+
+      It''s
+      up to you, and it''s up to me
+
+      
+
+      00:54.06 --> 00:57.83
+
+      No
+      one could say what we get to be
+
+      
+
+      00:57.83 --> 01:01.80
+
+      So
+      why don''t we rewrite the stars?
+
+      
+
+      01:01.80 --> 01:03.63
+
+      And
+      maybe the world could be ours, tonight
+
+      
+
+      01:14.23 --> 01:17.70
+
+      You
+      think it''s easy
+
+      
+
+      01:17.70 --> 01:21.79
+
+      You think I
+      don''t wanna run to you, yeah
+
+      
+
+      01:21.79 --> 01:26.02
+
+      But
+      there are mountains (But there are mountains)
+
+      
+
+      01:26.02 -->
+      01:29.80
+
+      And there are doors that we can''t walk through
+
+      
+
+      01:29.80
+      --> 01:31.34
+
+      I know you''re wondering why
+
+      
+
+      01:31.34
+      --> 01:37.55
+
+      Because we''re able to be just you and me within these
+      walls
+
+      
+
+      01:37.55 --> 01:39.43
+
+      But when we go outside
+
+      
+
+      01:39.43
+      --> 01:41.13
+
+      You''re gonna wake up and see that it was hopeless after
+      all
+
+      
+
+      01:47.15 --> 01:51.04
+
+      No one can rewrite the stars
+
+      
+
+      01:51.04
+      --> 01:54.46
+
+      How can you say you''ll be mine?
+
+      
+
+      01:54.46
+      --> 01:58.82
+
+      Everything keeps us apart
+
+      
+
+      01:58.82 -->
+      02:02.59
+
+      And I''m not the one you were meant to find
+
+      
+
+      02:02.59
+      --> 02:06.51
+
+      It''s not up to you, it''s not up to me, yeah
+
+      
+
+      02:06.51
+      --> 02:10.05
+
+      When everyone tells us what we can be
+
+      
+
+      02:10.05
+      --> 02:14.20
+
+      And how can we rewrite the stars?
+
+      
+
+      02:14.20
+      --> 02:16.13
+
+      Say that the world can be ours, tonight
+
+      
+
+      02:19.18
+      --> 02:23.61
+
+      All I want is to fly with you
+
+      
+
+      02:23.61
+      --> 02:27.01
+
+      All I want is to fall with you
+
+      
+
+      02:27.01
+      --> 02:30.97
+
+      So just give me all of you
+
+      
+
+      02:30.97 -->
+      02:33.71
+
+      It feels impossible (It''s not impossible)
+
+      
+
+      02:33.71
+      --> 02:35.50
+
+      Is it impossible?
+
+      
+
+      02:35.50 --> 02:37.79
+
+      Say
+      that it''s possible
+
+      
+
+      02:39.13 --> 02:42.89
+
+      And how
+      do we rewrite the stars?
+
+      
+
+      02:42.89 --> 02:46.62
+
+      Say
+      you were made to be mine
+
+      
+
+      02:46.62 --> 02:50.26
+
+      And
+      nothing can keep us apart
+
+      
+
+      02:50.26 --> 02:54.27
+
+      ''Cause
+      you are the one I was meant to find
+
+      
+
+      02:54.27 --> 02:57.97
+
+      It''s
+      up to you, and it''s up to me
+
+      
+
+      02:57.97 --> 03:01.91
+
+      No
+      one could say what we get to be
+
+      
+
+      03:01.91 --> 03:05.76
+
+      And
+      why don''t we rewrite the stars?
+
+      
+
+      03:05.76 --> 03:08.92
+
+      Changing
+      the world to be ours
+
+      
+
+      03:17.94 --> 03:22.50
+
+      You know
+      I want you
+
+      
+
+      03:22.50 --> 03:25.66
+
+      It''s not a secret
+      I try to hide
+
+      
+
+      03:25.66 --> 03:29.14
+
+      But I can''t have
+      you
+
+      
+
+      03:29.14 --> 03:32.57
+
+      We''re bound to break and
+      my hands are tied
+
+      
+
+'
+  - song: Sugar
+    artist: Maroon 5
+    thumbnailSprite: {fileID: 21300000, guid: cd22227b64ff24300abc8a8d89103167, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:08.44 --> 00:10.47
+
+      I''m hurtin''
+      baby
+
+      
+
+      00:10.47 --> 00:12.48
+
+      I''m broken down
+
+      
+
+      00:12.48
+      --> 00:16.49
+
+      I need your lovin'', lovin'', I need it now
+
+      
+
+      00:16.49
+      --> 00:18.45
+
+      When I''m without you
+
+      
+
+      00:18.45 --> 00:20.43
+
+      I''m
+      somethin'' weak
+
+      
+
+      00:20.43 --> 00:24.43
+
+      You got me beggin'',
+      beggin'', I''m on my knees, yeah
+
+      
+
+      00:24.43 --> 00:26.48
+
+      I
+      don''t wanna be needin'' your love
+
+      
+
+      00:26.48 --> 00:28.49
+
+      I
+      just wanna be deep in your love
+
+      
+
+      00:28.49 --> 00:31.49
+
+      And
+      it''s killin'' me when you''re away
+
+      
+
+      00:31.49 --> 00:32.47
+
+      Ooh,
+      baby
+
+      
+
+      00:32.47 --> 00:34.53
+
+      ''Cause I really don''t
+      care where you are
+
+      
+
+      00:34.53 --> 00:36.45
+
+      I just wanna
+      be there where you are
+
+      
+
+      00:36.45 --> 00:39.39
+
+      And I
+      gotta get one little taste
+
+      
+
+      00:39.39 --> 00:41.50
+
+      Your
+      sugar
+
+      
+
+      00:41.50 --> 00:43.48
+
+      Yes, please
+
+      
+
+      00:43.48
+      --> 00:47.43
+
+      Won''t you come and put it down on me?
+
+      
+
+      00:47.43
+      --> 00:49.41
+
+      I''m right here
+
+      
+
+      00:49.41 --> 00:51.46
+
+      ''Cause
+      I need
+
+      
+
+      00:51.46 --> 00:55.46
+
+      Little love, a little
+      sympathy
+
+      
+
+      00:55.46 --> 00:58.02
+
+      Yeah, you show me good
+      lovin''
+
+      
+
+      00:58.02 --> 00:59.98
+
+      Make it alright
+
+      
+
+      00:59.98
+      --> 01:03.50
+
+      Need a little sweetness in my life
+
+      
+
+      01:03.50
+      --> 01:05.45
+
+      Your sugar
+
+      
+
+      01:05.45 --> 01:07.44
+
+      Yes,
+      please
+
+      
+
+      01:07.44 --> 01:10.97
+
+      Won''t you come and put
+      it down on me?
+
+      
+
+      01:10.97 --> 01:14.44
+
+      Babe, my broken
+      pieces
+
+      
+
+      01:14.44 --> 01:16.44
+
+      You pick ''em up
+
+      
+
+      01:16.44
+      --> 01:20.45
+
+      Don''t leave me hangin'', hangin'', come give me some
+
+      
+
+      01:20.45
+      --> 01:21.95
+
+      When I''m without you
+
+      
+
+      01:21.95 --> 01:24.47
+
+      I''m
+      so insecure
+
+      
+
+      01:24.47 --> 01:28.47
+
+      You are the one
+      thing, one thing I''m livin'' for
+
+      
+
+      01:28.47 --> 01:30.46
+
+      I
+      don''t wanna be needin'' your love
+
+      
+
+      01:30.46 --> 01:32.50
+
+      I
+      just wanna be deep in your love
+
+      
+
+      01:32.50 --> 01:35.45
+
+      And
+      it''s killin'' me when you''re away
+
+      
+
+      01:35.45 --> 01:36.49
+
+      Ooh,
+      baby
+
+      
+
+      01:36.49 --> 01:38.48
+
+      ''Cause I really don''t
+      care where you are
+
+      
+
+      01:38.48 --> 01:40.47
+
+      I just wanna
+      be there where you are
+
+      
+
+      01:40.47 --> 01:43.48
+
+      And I
+      gotta get one little taste
+
+      
+
+      01:43.48 --> 01:45.43
+
+      Your
+      sugar
+
+      
+
+      01:45.43 --> 01:47.38
+
+      Yes, please
+
+      
+
+      01:47.38
+      --> 01:51.46
+
+      Won''t you come and put it down on me?
+
+      
+
+      01:51.46
+      --> 01:53.45
+
+      I''m right here
+
+      
+
+      01:53.45 --> 01:55.45
+
+      ''Cause
+      I need
+
+      
+
+      01:55.45 --> 01:59.47
+
+      Little love, a little
+      sympathy
+
+      
+
+      01:59.47 --> 02:02.03
+
+      Yeah, you show me good
+      lovin''
+
+      
+
+      02:02.03 --> 02:04.00
+
+      Make it alright
+
+      
+
+      02:04.00
+      --> 02:07.49
+
+      Need a little sweetness in my life
+
+      
+
+      02:07.49
+      --> 02:09.63
+
+      Your sugar
+
+      
+
+      02:09.63 --> 02:11.50
+
+      Yes,
+      please
+
+      
+
+      02:11.50 --> 02:15.48
+
+      Won''t you come and put
+      it down on me?
+
+      
+
+      02:15.48 --> 02:18.50
+
+      Yeah, I want
+      that red velvet
+
+      
+
+      02:18.50 --> 02:20.52
+
+      I want that
+      sugar sweet
+
+      
+
+      02:20.52 --> 02:24.46
+
+      Don''t let nobody
+      touch it unless that somebody''s me
+
+      
+
+      02:24.46 --> 02:26.52
+
+      I
+      gotta be a man
+
+      
+
+      02:26.52 --> 02:28.41
+
+      There ain''t
+      no other way
+
+      
+
+      02:28.41 --> 02:32.48
+
+      ''Cause girl, you''re
+      hotter than a southern California day
+
+      
+
+      02:32.48 --> 02:34.50
+
+      I
+      don''t wanna play no games
+
+      
+
+      02:34.50 --> 02:36.43
+
+      You
+      don''t gotta be afraid
+
+      
+
+      02:36.43 --> 02:37.94
+
+      Don''t
+      give me all that shy shit
+
+      
+
+      02:37.94 --> 02:39.73
+
+      No
+      makeup on, that''s my sugar
+
+      
+
+      02:39.73 --> 02:41.58
+
+      Sugar
+
+      
+
+      02:41.58
+      --> 02:43.50
+
+      Yes, please
+
+      
+
+      02:43.50 --> 02:47.47
+
+      Won''t
+      you come and put it down on me?
+
+      
+
+      02:47.47 --> 02:49.54
+
+      I''m
+      right here
+
+      
+
+      02:49.54 --> 02:51.51
+
+      ''Cause I need
+
+      
+
+      02:51.51
+      --> 02:54.92
+
+      Little love, a little sympathy
+
+      
+
+      02:54.92
+      --> 02:57.99
+
+      So baby, just show me good lovin''
+
+      
+
+      02:57.99
+      --> 02:59.99
+
+      Make it alright
+
+      
+
+      02:59.99 --> 03:03.27
+
+      Need
+      a little sweetness in my life
+
+      
+
+      03:03.27 --> 03:05.73
+
+      Your
+      sugar
+
+      
+
+      03:05.73 --> 03:07.41
+
+      Yes, please
+
+      
+
+      03:07.41
+      --> 03:11.35
+
+      Won''t you come and put it down on me?
+
+      
+
+      03:11.35
+      --> 03:13.71
+
+      Your sugar
+
+      
+
+      03:13.71 --> 03:15.42
+
+      Yes,
+      please
+
+      
+
+      03:15.42 --> 03:19.49
+
+      Won''t you come and put
+      it down on me?
+
+      
+
+      03:19.49 --> 03:21.49
+
+      I''m right here
+
+      
+
+      03:21.49
+      --> 03:23.47
+
+      ''Cause I need
+
+      
+
+      03:23.47 --> 03:27.47
+
+      Little
+      love, a little sympathy
+
+      
+
+      03:27.47 --> 03:29.99
+
+      Yeah,
+      you show me good lovin''
+
+      
+
+      03:29.99 --> 03:31.91
+
+      Make
+      it alright
+
+      
+
+      03:31.91 --> 03:35.50
+
+      Need a little sweetness
+      in my life
+
+      
+
+      03:35.50 --> 03:37.55
+
+      Your sugar
+
+      
+
+      03:37.55
+      --> 03:39.39
+
+      Yes, please
+
+      
+
+      03:39.39 --> 03:46.33
+
+      Won''t
+      you come and put it down on me?
+
+      
+
+'
+  - song: When I Was Your Man
+    artist: Bruno Mars
+    thumbnailSprite: {fileID: 21300000, guid: 2ce83592456d5f04da8ed32042d8ac62, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:13.29 --> 00:19.96
+
+      Same bed, but
+      it feels just a little bit bigger now
+
+      
+
+      00:19.96 --> 00:26.44
+
+      Our
+      song on the radio, but it don''t sound the same
+
+      
+
+      00:26.44 -->
+      00:33.06
+
+      When our friends talk about you, all it does is just tear
+      me down
+
+      
+
+      00:33.06 --> 00:37.11
+
+      ''Cause my heart breaks
+      a little when I hear your name
+
+      
+
+      00:37.45 --> 00:45.56
+
+      It
+      all just sounds like
+
+      
+
+      00:45.56 --> 00:49.92
+
+      Mmm, too
+      young, too dumb to realize
+
+      
+
+      00:50.43 --> 00:54.71
+
+      That
+      I should''ve bought you flowers
+
+      
+
+      00:54.71 --> 00:57.10
+
+      And
+      held your hand
+
+      
+
+      00:57.10 --> 01:01.10
+
+      Should''ve gave
+      you all my hours
+
+      
+
+      01:01.10 --> 01:03.79
+
+      When I had
+      the chance
+
+      
+
+      01:03.79 --> 01:06.23
+
+      Take you to every
+      party
+
+      
+
+      01:06.23 --> 01:10.49
+
+      ''Cause all you wanted
+      to do was dance
+
+      
+
+      01:10.49 --> 01:13.56
+
+      Now my baby''s
+      dancing
+
+      
+
+      01:13.56 --> 01:16.55
+
+      But she''s dancing with
+      another man
+
+      
+
+      01:22.45 --> 01:29.01
+
+      My pride, my ego,
+      my needs and my selfish ways
+
+      
+
+      01:29.01 --> 01:34.62
+
+      Caused
+      a good strong woman like you to walk out my life
+
+      
+
+      01:34.62
+      --> 01:42.18
+
+      Now I never, never get to clean up the mess I made, oh
+
+      
+
+      01:42.18
+      --> 01:46.56
+
+      And that haunts me every time I close my eyes
+
+      
+
+      01:46.56
+      --> 01:54.69
+
+      It all just sounds like
+
+      
+
+      01:54.69 -->
+      01:59.45
+
+      Mmm, too young, too dumb to realize
+
+      
+
+      01:59.45
+      --> 02:03.79
+
+      That I should''ve bought you flowers
+
+      
+
+      02:03.79
+      --> 02:06.11
+
+      And held your hand
+
+      
+
+      02:06.11 --> 02:10.12
+
+      Should''ve
+      gave you all my hours
+
+      
+
+      02:10.12 --> 02:12.71
+
+      When I
+      had the chance
+
+      
+
+      02:12.71 --> 02:15.26
+
+      Take you to every
+      party
+
+      
+
+      02:15.26 --> 02:19.45
+
+      ''Cause all you wanted
+      to do was dance
+
+      
+
+      02:19.45 --> 02:22.57
+
+      Now my baby''s
+      dancing
+
+      
+
+      02:22.57 --> 02:25.82
+
+      But she''s dancing with
+      another man
+
+      
+
+      02:26.80 --> 02:29.96
+
+      Although it hurts
+
+      
+
+      02:29.96
+      --> 02:39.68
+
+      I''ll be the first to say that I was wrong
+
+      
+
+      02:39.68
+      --> 02:43.14
+
+      Oh, I know I''m probably much too late
+
+      
+
+      02:43.14
+      --> 02:46.57
+
+      To try and apologize for my mistakes
+
+      
+
+      02:46.57
+      --> 02:52.04
+
+      But I just want you to know
+
+      
+
+      02:52.04
+      --> 02:56.09
+
+      I hope he buys you flowers
+
+      
+
+      02:56.09 -->
+      02:59.40
+
+      I hope he holds your hand
+
+      
+
+      02:59.40 --> 03:03.00
+
+      Give
+      you all his hours
+
+      
+
+      03:03.00 --> 03:06.21
+
+      When he has
+      the chance
+
+      
+
+      03:06.21 --> 03:08.44
+
+      Take you to every
+      party
+
+      
+
+      03:08.44 --> 03:12.50
+
+      ''Cause I remember how
+      much you loved to dance
+
+      
+
+      03:12.50 --> 03:16.70
+
+      Do all
+      the things I should''ve done
+
+      
+
+      03:16.70 --> 03:19.23
+
+      When
+      I was your man
+
+      
+
+      03:19.23 --> 03:24.53
+
+      Do all the things
+      I should''ve done
+
+      
+
+      03:24.53 --> 03:27.13
+
+      When I was
+      your man
+
+      
+
+'
+  - song: You Belong with Me
+    artist: Taylor Swift
+    thumbnailSprite: {fileID: 21300000, guid: 28f4350b86e0b4719b03202261473d1e, type: 3}
     audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
+    lyricsVTT: 'WEBVTT
+
+      
+
+      00:00.00 --> 00:07.51
+
+      Taylor Swift
+      ~ You Belong With Me
+
+      
+
+      00:07.51 --> 00:11.51
+
+      You''re
+      on the phone with your girlfriend, she''s upset
+
+      
+
+      00:11.51 -->
+      00:15.24
+
+      She''s goin'' off about somethin'' that you said
+
+      
+
+      00:15.24
+      --> 00:22.27
+
+      ''Cause she doesn''t get your humor like I do
+
+      
+
+      00:22.27
+      --> 00:26.15
+
+      I''m in the room, it''s a typical Tuesday night
+
+      
+
+      00:26.15
+      --> 00:30.13
+
+      I''m listenin'' to the kind of music she doesn''t like
+
+      
+
+      00:30.13
+      --> 00:36.82
+
+      And she''ll never know your story like I do
+
+      
+
+      00:36.82
+      --> 00:40.67
+
+      But she wears short skirts, I wear T-shirts
+
+      
+
+      00:40.67
+      --> 00:44.36
+
+      She''s cheer captain and I''m on the bleachers
+
+      
+
+      00:44.36
+      --> 00:47.40
+
+      Dreamin'' ''bout the day when you wake up and find
+
+      
+
+      00:47.40
+      --> 00:51.12
+
+      That what you''re looking for has been here the whole
+      time
+
+      
+
+      00:51.12 --> 00:55.51
+
+      If you could see that I''m
+      the one who understands you
+
+      
+
+      00:55.51 --> 01:01.69
+
+      Been
+      here all along, so why can''t you see
+
+      
+
+      01:01.69 --> 01:05.06
+
+      You
+      belong with me
+
+      
+
+      01:05.06 --> 01:10.25
+
+      You belong with
+      me
+
+      
+
+      01:10.25 --> 01:14.23
+
+      Walkin'' the streets with
+      you and your worn-out jeans
+
+      
+
+      01:14.23 --> 01:18.02
+
+      I
+      can''t help thinkin'' this is how it ought to be
+
+      
+
+      01:18.02
+      --> 01:21.68
+
+      Laughin'' on a park bench, thinkin'' to myself
+
+      
+
+      01:21.68
+      --> 01:24.90
+
+      "Hey, isn''t this easy?"
+
+      
+
+      01:24.90 -->
+      01:28.92
+
+      And you''ve got a smile that could light up this whole town
+
+      
+
+      01:28.92
+      --> 01:32.67
+
+      I haven''t seen it in a while since she brought you down
+
+      
+
+      01:32.67
+      --> 01:35.91
+
+      You say you''re fine, I know you better than that
+
+      
+
+      01:35.91
+      --> 01:39.68
+
+      Hey, what you doin'' with a girl like that?
+
+      
+
+      01:39.68
+      --> 01:43.53
+
+      She wears high heels, I wear sneakers
+
+      
+
+      01:43.53
+      --> 01:47.07
+
+      She''s cheer captain and I''m on the bleachers
+
+      
+
+      01:47.07
+      --> 01:50.14
+
+      Dreamin'' ''bout the day when you wake up and find
+
+      
+
+      01:50.14
+      --> 01:53.86
+
+      That what you''re looking for has been here the whole
+      time
+
+      
+
+      01:53.86 --> 01:58.08
+
+      If you could see that I''m
+      the one who understands you
+
+      
+
+      01:58.08 --> 02:04.22
+
+      Been
+      here all along, so why can''t you see
+
+      
+
+      02:04.22 --> 02:09.25
+
+      You
+      belong with me
+
+      
+
+      02:09.25 --> 02:12.91
+
+      Standin'' by
+      and waitin'' at your back door
+
+      
+
+      02:12.91 --> 02:18.97
+
+      All
+      this time, how could you not know, baby
+
+      
+
+      02:18.97 --> 02:22.65
+
+      You
+      belong with me
+
+      
+
+      02:22.65 --> 02:37.09
+
+      You belong with
+      me
+
+      
+
+      02:37.09 --> 02:40.35
+
+      Oh, I remember you drivin''
+      to my house
+
+      
+
+      02:40.35 --> 02:42.14
+
+      In the middle of
+      the night
+
+      
+
+      02:42.14 --> 02:44.06
+
+      I''m the one who makes
+      you laugh
+
+      
+
+      02:44.06 --> 02:45.87
+
+      When you know you''re
+      ''bout to cry
+
+      
+
+      02:45.87 --> 02:47.70
+
+      And I know your
+      favorite songs
+
+      
+
+      02:47.70 --> 02:49.56
+
+      And you tell
+      me ''bout your dreams
+
+      
+
+      02:49.56 --> 02:51.51
+
+      Think
+      I know where you belong
+
+      
+
+      02:51.51 --> 02:54.89
+
+      Think
+      I know it''s with me
+
+      
+
+      02:54.89 --> 02:59.10
+
+      Can''t
+      you see that I''m the one who understands you?
+
+      
+
+      02:59.10 -->
+      03:05.04
+
+      Been here all along, so why can''t you see
+
+      
+
+      03:05.04
+      --> 03:10.20
+
+      You belong with me
+
+      
+
+      03:10.20 --> 03:13.90
+
+      Standin''
+      by and waitin'' at your back door
+
+      
+
+      03:13.90 --> 03:19.92
+
+      All
+      this time, how could you not know, baby
+
+      
+
+      03:19.92 --> 03:23.53
+
+      You
+      belong with me
+
+      
+
+      03:23.53 --> 03:27.29
+
+      You belong with
+      me
+
+      
+
+      03:27.29 --> 03:30.07
+
+      You belong with me
+
+      
+
+      03:30.07
+      --> 03:34.71
+
+      Have you ever thought just maybe
+
+      
+
+      03:34.71
+      --> 03:38.34
+
+      You belong with me
+
+      
+
+      03:38.34 --> 03:45.00
+
+      You
+      belong with me
+
+      
+
+'
 --- !u!114 &1542449092323375815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2208,7 +5449,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00015896586}
-  m_SizeDelta: {x: 0, y: 1100}
+  m_SizeDelta: {x: 0, y: 1800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3243428860875994673
 MonoBehaviour:
@@ -2334,7 +5575,6 @@ GameObject:
   - component: {fileID: 1605411760624140369}
   - component: {fileID: 1131290500851641608}
   - component: {fileID: 6048219045079788297}
-  - component: {fileID: 3399008355186556311}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -2431,639 +5671,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3399008355186556311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2802491614803742740}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17d3e756fe7beb84cb3ef3a2d86f6ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  songTilePrefab: {fileID: 3828621682143614900, guid: 204ecbbc0ce4798498ea09e860cb551c, type: 3}
-  contentContainer: {fileID: 4636605313299869774}
-  songDataList:
-  - song: Blank Space
-    artist: Taylor Swift
-    thumbnailSprite: {fileID: 21300000, guid: 538507c1f8f27784894404746168e3ce, type: 3}
-    audioClip: {fileID: 8300000, guid: 9a1cf45c6d659864b876771967ed18a7, type: 3}
-    lyricsVTT: 'WEBVTT
-
-
-
-      00:05.80 --> 00:08.27
-
-      Nice to meet you, where
-      you been?
-
-
-
-      00:08.27 --> 00:10.79
-
-      I could show you incredible
-      things
-
-
-
-      00:10.79 --> 00:13.28
-
-      Magic, madness, heaven, sin
-
-
-
-      00:13.28
-      --> 00:15.20
-
-      Saw you there and I thought
-
-
-
-      00:15.20 --> 00:17.73
-
-      "Oh
-      my God, look at that face
-
-
-
-      00:17.73 --> 00:20.21
-
-      You look like
-      my next mistake
-
-
-
-      00:20.21 --> 00:24.09
-
-      Love''s a game, wanna
-      play?"
-
-
-
-      00:24.25 --> 00:28.24
-
-      Aye, new money, suit and tie
-
-
-
-      00:28.24
-      --> 00:30.83
-
-      I can read you like a magazine
-
-
-
-      00:30.83 --> 00:33.31
-
-      Ain''t
-      it funny? Rumors fly
-
-
-
-      00:33.31 --> 00:37.55
-
-      And I know you heard
-      about me, so hey, let''s be friends
-
-
-
-      00:37.55 --> 00:40.21
-
-      I''m
-      dyin'' to see how this one ends
-
-
-
-      00:40.21 --> 00:42.69
-
-      Grab
-      your passport and my hand
-
-
-
-      00:42.69 --> 00:45.38
-
-      I can make
-      the bad guys good for a weekend
-
-
-
-      00:45.38 --> 00:47.98
-
-      So it''s
-      gonna be forever
-
-
-
-      00:47.98 --> 00:50.52
-
-      Or it''s gonna go down
-      in flames
-
-
-
-      00:50.52 --> 00:53.01
-
-      You can tell me when it''s
-      over, mmm
-
-
-
-      00:53.01 --> 00:55.47
-
-      If the high was worth the pain
-
-
-
-      00:55.47
-      --> 00:57.99
-
-      Got a long list of ex-lovers
-
-
-
-      00:57.99 --> 01:00.48
-
-      They''ll
-      tell you I''m insane
-
-
-
-      01:00.48 --> 01:03.00
-
-      ''Cause you know
-      I love the players
-
-
-
-      01:03.00 --> 01:05.47
-
-      And you love the game
-
-
-
-      01:05.47
-      --> 01:07.99
-
-      ''Cause we''re young and we''re reckless
-
-
-
-      01:07.99
-      --> 01:10.51
-
-      We''ll take this way too far
-
-
-
-      01:10.51 --> 01:13.00
-
-      It''ll
-      leave you breathless, mmm
-
-
-
-      01:13.00 --> 01:15.47
-
-      Or with a nasty
-      scar
-
-
-
-      01:15.47 --> 01:18.00
-
-      Got a long list of ex-lovers
-
-
-
-      01:18.00
-      --> 01:20.63
-
-      They''ll tell you I''m insane
-
-
-
-      01:20.63 --> 01:24.08
-
-      But
-      I''ve got a blank space, baby
-
-
-
-      01:24.08 --> 01:25.83
-
-      And I''ll
-      write your name
-
-
-
-      01:30.75 --> 01:33.34
-
-      Cherry lips, crystal
-      skies
-
-
-
-      01:33.34 --> 01:35.73
-
-      I could show you incredible things
-
-
-
-      01:35.73
-      --> 01:38.36
-
-      Stolen kisses, pretty lies
-
-
-
-      01:38.36 --> 01:40.49
-
-      You''re
-      the king, baby, I''m your queen
-
-
-
-      01:40.49 --> 01:42.71
-
-      Find
-      out what you want
-
-
-
-      01:42.71 --> 01:45.21
-
-      Be that girl for a
-      month
-
-
-
-      01:45.21 --> 01:50.60
-
-      Wait, the worst is yet to come,
-      oh no
-
-
-
-      01:50.69 --> 01:53.34
-
-      Screaming, crying, perfect storms
-
-
-
-      01:53.34
-      --> 01:55.81
-
-      I can make all the tables turn
-
-
-
-      01:55.81 --> 01:58.35
-
-      Rose
-      garden filled with thorns
-
-
-
-      01:58.35 --> 02:00.17
-
-      Keep you second-guessin''
-      like
-
-
-
-      02:00.17 --> 02:02.67
-
-      "Oh my God, who is she?"
-
-
-
-      02:02.67
-      --> 02:05.02
-
-      I get drunk on jealousy
-
-
-
-      02:05.02 --> 02:07.54
-
-      But
-      you''ll come back each time you leave
-
-
-
-      02:07.54 --> 02:10.38
-
-      ''Cause,
-      darling, I''m a nightmare dressed like a daydream
-
-
-
-      02:10.42 --> 02:12.98
-
-      So
-      it''s gonna be forever
-
-
-
-      02:12.98 --> 02:15.48
-
-      Or it''s gonna
-      go down in flames
-
-
-
-      02:15.48 --> 02:18.00
-
-      You can tell me when
-      it''s over, mmm
-
-
-
-      02:18.00 --> 02:20.47
-
-      If the high was worth
-      the pain
-
-
-
-      02:20.47 --> 02:23.01
-
-      Got a long list of ex-lovers
-
-
-
-      02:23.01
-      --> 02:25.48
-
-      They''ll tell you I''m insane
-
-
-
-      02:25.48 --> 02:27.99
-
-      ''Cause
-      you know I love the players
-
-
-
-      02:27.99 --> 02:30.47
-
-      And you love
-      the game
-
-
-
-      02:30.47 --> 02:32.98
-
-      ''Cause we''re young and we''re
-      reckless
-
-
-
-      02:32.98 --> 02:35.48
-
-      We''ll take this way too far
-
-
-
-      02:35.48
-      --> 02:38.00
-
-      It''ll leave you breathless, mmm
-
-
-
-      02:38.00 -->
-      02:40.46
-
-      Or with a nasty scar
-
-
-
-      02:40.46 --> 02:42.98
-
-      Got
-      a long list of ex-lovers
-
-
-
-      02:42.98 --> 02:45.64
-
-      They''ll tell
-      you I''m insane
-
-
-
-      02:45.64 --> 02:49.09
-
-      But I''ve got a blank
-      space, baby
-
-
-
-      02:49.09 --> 02:50.55
-
-      And I''ll write your name
-
-
-
-      02:50.55
-      --> 02:55.53
-
-      Boys only want love if it''s torture
-
-
-
-      02:55.53
-      --> 03:00.49
-
-      Don''t say I didn''t, say I didn''t warn ya
-
-
-
-      03:00.49
-      --> 03:05.45
-
-      Boys only want love if it''s torture
-
-
-
-      03:05.45
-      --> 03:13.67
-
-      Don''t say I didn''t, say I didn''t warn ya
-
-
-
-      03:10.42
-      --> 03:13.00
-
-      So it''s gonna be forever
-
-
-
-      03:13.00 --> 03:15.51
-
-      Or
-      it''s gonna go down in flames
-
-
-
-      03:15.51 --> 03:18.01
-
-      You can
-      tell me when it''s over, mmm
-
-
-
-      03:18.01 --> 03:20.46
-
-      If the high
-      was worth the pain
-
-
-
-      03:20.46 --> 03:22.99
-
-      Got a long list of
-      ex-lovers
-
-
-
-      03:22.99 --> 03:25.49
-
-      They''ll tell you I''m insane
-
-
-
-      03:25.49
-      --> 03:27.97
-
-      ''Cause you know I love the players
-
-
-
-      03:27.97 -->
-      03:30.48
-
-      And you love the game
-
-
-
-      03:30.48 --> 03:32.93
-
-      ''Cause
-      we''re young and we''re reckless
-
-
-
-      03:32.93 --> 03:35.54
-
-      We''ll
-      take this way too far
-
-
-
-      03:35.54 --> 03:38.04
-
-      It''ll leave you
-      breathless, mmm
-
-
-
-      03:38.04 --> 03:40.46
-
-      Or with a nasty scar
-
-
-
-      03:40.46
-      --> 03:42.99
-
-      Got a long list of ex-lovers
-
-
-
-      03:42.99 --> 03:45.65
-
-      They''ll
-      tell you I''m insane
-
-
-
-      03:45.65 --> 03:49.10
-
-      But I''ve got a
-      blank space, baby
-
-
-
-      03:49.10 --> 03:50.92
-
-      And I''ll write your
-      name
-
-
-
-'
-  - song: test2
-    artist: test2
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
-  - song: est4
-    artist: est5
-    thumbnailSprite: {fileID: 21300000, guid: 4fc1afc57e3d8fc4494355a77dae3ad2, type: 3}
-    audioClip: {fileID: 0}
-    lyricsVTT: 
 --- !u!1 &3006830876600056037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4316,8 +6923,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1614301183238647584}
   m_HandleRect: {fileID: 4997266477484437308}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.5295455
+  m_Value: 1.0000001
+  m_Size: 0.32361108
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
