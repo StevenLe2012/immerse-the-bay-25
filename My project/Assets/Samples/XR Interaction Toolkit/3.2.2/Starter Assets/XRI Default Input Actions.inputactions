@@ -3530,6 +3530,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Navigation",
+            "id": "cbed49d5-c1e5-4644-b9a4-18e4217ef4b8",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5011323b-c587-45de-b675-d0f43b89c97b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4ee626d4-ba1a-47cd-b060-deb88ac3f579",
+                    "path": "<XREALController>/{ButtonId0}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

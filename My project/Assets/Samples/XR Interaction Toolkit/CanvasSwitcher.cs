@@ -1,9 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CanvasSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject selectionCanvas;
     [SerializeField] private GameObject karaokeCanvas;
+    public InputActionReference buttonAction; // Drag your InputAction here in the Inspector
+
 
     public static CanvasSwitcher Instance;
 
@@ -17,10 +22,23 @@ public class CanvasSwitcher : MonoBehaviour
         SwitchToSelectionCanvas();
     }
 
+    private void OnEnable()
+    {
+        buttonAction.action.performed += OnButtonPressed;
+        buttonAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        buttonAction.action.performed -= OnButtonPressed;
+        buttonAction.action.Disable();
+    }
+
     public void SwitchToSelectionCanvas()
     {
         selectionCanvas.SetActive(true);
         karaokeCanvas.SetActive(false);
+        Debug.Log("Switched to Selection Canvas");
     }
 
 
@@ -28,6 +46,12 @@ public class CanvasSwitcher : MonoBehaviour
     {
         selectionCanvas.SetActive(false);
         karaokeCanvas.SetActive(true);
+        Debug.Log("Switched to Karaoke Canvas");
     }
-    
+
+    private void OnButtonPressed(InputAction.CallbackContext context)
+    {
+        SwitchToSelectionCanvas();
+    }
+
 }
