@@ -9,9 +9,9 @@ public class SongData
     public string artist;
     public Sprite thumbnailSprite;
 
-    public string lyricsVTT;
+    public AudioClip audioClip;
 
-    
+    public string lyricsVTT;
 }
 
 public class SongTileController : MonoBehaviour
@@ -27,6 +27,8 @@ public class SongTileController : MonoBehaviour
 
     private KaraokeText karaokeText;
 
+    private CanvasSwitcher canvasSwitcher;
+
     private void Awake()
     {
         button = GetComponentInChildren<Button>();
@@ -36,6 +38,8 @@ public class SongTileController : MonoBehaviour
     {
         // Get the KaraokeText instance (it's set in Start, so we get it here)
         karaokeText = KaraokeText.Instance;
+        canvasSwitcher = CanvasSwitcher.Instance;
+
         
         if (karaokeText == null)
         {
@@ -69,12 +73,8 @@ public class SongTileController : MonoBehaviour
         if (karaokeText != null && !string.IsNullOrEmpty(songData.lyricsVTT))
         {
             // Set the VTT lyrics data and initialize karaoke
-            karaokeText.str = songData.lyricsVTT;
-            karaokeText.InitKaraoke();
-        }
-        else
-        {
-            Debug.LogWarning("KaraokeText instance is null or lyricsVTT is empty.");
+            karaokeText.setupKaraoke(songData.audioClip, songData.lyricsVTT);
+            canvasSwitcher.SwitchToKaraokeCanvas();
         }
     }
 
