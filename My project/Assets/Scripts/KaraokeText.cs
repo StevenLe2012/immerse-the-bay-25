@@ -54,7 +54,7 @@ public class LyricalLine
 public class KaraokeText : MonoBehaviour
 {
     // audiosource, very important that it is set!!!
-    public AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
     // // The canvas UI gameobject.
     // public Canvas canvas;
@@ -65,12 +65,11 @@ public class KaraokeText : MonoBehaviour
     // MOST IMPORTANT THING!!!
     // This string should be populated with the VTT data.
     // Make sure this is the data and not the filename.
-    [TextArea]
-    public string str;
+    private string vttLyrics;
 
     // The Text Lines that our lyrics are displayed.
-    public TextMeshProUGUI nextLine;
-    public TextMeshProUGUI currentLine;
+    [SerializeField] private TextMeshProUGUI nextLine;
+    [SerializeField] private TextMeshProUGUI currentLine;
 
     // The rect transform for the above text lines.
     RectTransform currentRectTransform;
@@ -88,21 +87,28 @@ public class KaraokeText : MonoBehaviour
         // NOTE! You may not want to put this in the Start function.
         // Call this function once you recieve the information for the
         // audio and the subtitles.
-        InitKaraoke();
+        // InitKaraoke();
         Instance = this;
 
         //KaraokeText.Instance.str = File.ReadAllText({ insert filename});
         //KaraokeText.Instance.InitKaraoke();
         //KaraokeText.Instance.UpdateKaraoke();
     }
-    // 
+
+    public void setupKaraoke(AudioClip audioClip, string vttLyrics)
+    {
+        this.audioSource.clip = audioClip;
+        this.vttLyrics = vttLyrics;
+        InitKaraoke();
+    }
+    
 
     // Read VTT Text that is in the str variable.
     // If you need to use a different subtitle format (SRT) let me know on discord.
-    public void InitKaraoke()
+    private void InitKaraoke()
     {
         lyrics = new List<LyricalLine>();
-        var lines = str.Split('\n');
+        var lines = vttLyrics.Split('\n');
         bool isLyrics = false;
         foreach (var line in lines)
         {
@@ -188,5 +194,10 @@ public class KaraokeText : MonoBehaviour
     float GetAudioTime()
     {
         return audioSource.time;
+    }
+
+    public void SetAudioSource(AudioClip audioClip)
+    {
+        this.audioSource.clip = audioClip;
     }
 }

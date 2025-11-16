@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/XERAL XR Plugin/3.0.0-pre.4/Interaction Basics/FocusPlane/FocusPlane.unity
     guid: 2894a7ce1ed1586448b6633ee57f102f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Steven-Scene-1.unity
     guid: 56a9387750a19414c8c67ced4e8828d2
   - enabled: 0
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Working_XREAL_Duplicate.unity
     guid: 2d449274517104f80b85f2733204239c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jess-Scene_steven_branch.unity
     guid: 59d855536a86548a6a72aa005aeab04b
   m_configObjects:
