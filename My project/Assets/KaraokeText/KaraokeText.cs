@@ -5,7 +5,7 @@ using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Xml;
 using TMPro;
-using UnityEditor.Search;
+// using UnityEditor.Search;
 using UnityEngine;
 
 public class Timestamp
@@ -82,7 +82,7 @@ public class KaraokeText : MonoBehaviour
     float timeElapsed = 0f;
     bool isInitialized = false;
     int currentIndex = 0;
-    
+
     void Start()
     {
         // NOTE! You may not want to put this in the Start function.
@@ -134,7 +134,7 @@ public class KaraokeText : MonoBehaviour
         // NOTE!! Use this isInitialized variable if needed.
         // Update Karaoke should only be called if isInitialized.
         isInitialized = true;
-        
+
         // Reinitialize time.
         timeElapsed = 0;
     }
