@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Working_XREAL_Duplicate.unity
     guid: 2d449274517104f80b85f2733204239c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jess-Scene_steven_branch.unity
     guid: 59d855536a86548a6a72aa005aeab04b
+  - enabled: 1
+    path: Assets/Scenes/jess-everything.unity
+    guid: 349d1ace29c7948eabbc6d1eac433d02
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0465d33c6aee55f44b0237db8b0e0259, type: 2}
