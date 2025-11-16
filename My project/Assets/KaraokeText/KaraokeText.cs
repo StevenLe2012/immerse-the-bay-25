@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Xml;
 using TMPro;
@@ -23,10 +24,25 @@ public class Timestamp
     {
         Debug.Log(text);
         var split = text.Split(':');
-        hours = 0;
-        minutes = int.Parse(split[0]);
-        seconds = double.Parse(split[1]);
-        //seconds = double.Parse(split[2]);
+
+        if (split.Length == 2)
+        {
+            hours = 0;
+            minutes = int.Parse(split[0]);
+            seconds = double.Parse(split[1]);
+        }
+        else if (split.Length == 3)
+        {
+            hours = int.Parse(split[0]);
+            minutes = int.Parse(split[1]);
+            seconds = double.Parse(split[2]);
+        }
+        else if (split.Length == 1)
+        {
+            hours = 0;
+            minutes = 0;
+            seconds = double.Parse(split[0]);
+        }
     }
 }
 public class LyricalLine
@@ -46,6 +62,7 @@ public class KaraokeText : MonoBehaviour
     // An instance that you can access this class from anywhere.
     public static KaraokeText Instance;
 
+    // MOST IMPORTANT THING!!!
     // This string should be populated with the VTT data.
     // Make sure this is the data and not the filename.
     [TextArea]
@@ -73,7 +90,12 @@ public class KaraokeText : MonoBehaviour
         // audio and the subtitles.
         InitKaraoke();
         Instance = this;
+
+        //KaraokeText.Instance.str = File.ReadAllText({ insert filename});
+        //KaraokeText.Instance.InitKaraoke();
+        //KaraokeText.Instance.UpdateKaraoke();
     }
+    // 
 
     // Read VTT Text that is in the str variable.
     // If you need to use a different subtitle format (SRT) let me know on discord.
