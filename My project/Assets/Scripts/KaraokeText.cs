@@ -56,8 +56,8 @@ public class KaraokeText : MonoBehaviour
     // audiosource, very important that it is set!!!
     public AudioSource audioSource;
 
-    // The canvas UI gameobject.
-    public Canvas canvas;
+    // // The canvas UI gameobject.
+    // public Canvas canvas;
 
     // An instance that you can access this class from anywhere.
     public static KaraokeText Instance;
