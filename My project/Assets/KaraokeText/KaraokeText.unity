@@ -119,6 +119,135 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &542253122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542253124}
+  - component: {fileID: 542253123}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &542253123
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542253122}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 4150e8e2f179d784ebb39ad8081c3f7b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &542253124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542253122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.774084, y: -5.038883, z: 124.62508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609303206
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,43 +277,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b82ec45b5150ed429ab8375c50eda89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KaraokeText
+  audioSource: {fileID: 542253123}
   canvas: {fileID: 635357299}
-  fontSize: 75
-  str: "WEBVTT\r\n\r\n00:00:08.065 --> 00:00:11.269\r\nI am the limitless Noclipper\r\n\r\n00:00:11.269
-    --> 00:00:14.735\r\nSpilling out endless gold, flooding the world with glitter\r\n\r\n00:00:14.735
-    --> 00:00:17.643\r\nScrew this cathode-ray-tube-display chamber\r\n\r\n00:00:17.643
-    --> 00:00:22.552\r\nTell me how to break beyond this emulator's border\r\n\r\n00:00:27.355
-    --> 00:00:30.520\r\nGlitch Out, shatter the world, detonate\r\n\r\n00:00:30.520
-    --> 00:00:33.728\r\nGlitch Out, phase through every hitbox gate\r\n\r\n00:00:33.728
-    --> 00:00:36.917\r\nGlitch Out, crack the code, hack the way\r\n\r\n00:00:36.917
-    --> 00:00:40.163\r\nGlitch Out (Ohh) Glitch Out (Ohh)\r\n\r\n00:00:40.163 -->
-    00:00:43.353\r\nGlitch Out, push and beyond the voltage\r\n\r\n00:00:43.353 -->
-    00:00:46.478\r\nGlitch Out, undefined is my own way\r\n\r\n00:00:46.478 --> 00:00:49.719\r\nGlitch
-    Out, I will never obey\r\n\r\n00:00:49.719 --> 00:00:55.711\r\nGlitch Out (Ohh)
-    Glitch Out (Ohh)\r\n\r\n00:01:04.513 --> 00:01:05.708\r\n(Let the bass go)\r\n\r\n00:01:05.708
-    --> 00:01:08.894\r\nOverflowed 2.1 billion inside out\r\n\r\n00:01:08.894 -->
-    00:01:12.074\r\nIs the bug a curse, or a black diamond cashout?\r\n\r\n00:01:12.074
-    --> 00:01:15.233\r\nWanna jump in chaos, with me, no set route\r\n\r\n00:01:15.233
-    --> 00:01:18.630\r\n1, 2 I-I-Imma Glitch Out\r\n\r\n00:02:05.891 --> 00:02:07.477\r\nSetting
-    up an ACE(Arbitrary Code Execution) in the code\r\n\r\n00:02:07.477 --> 00:02:09.359\r\nEasy
-    as a click-clock, overload\r\n\r\n00:02:09.359 --> 00:02:12.863\r\nI'm a hacker,
-    or master, sneaking into every sector\r\n\r\n00:02:12.863 --> 00:02:16.250\r\nTwisted
-    RNG, I've cracked the seed completely\r\n\r\n00:02:16.250 --> 00:02:19.371\r\nThe
-    exploited method to glitch out of this gravity\r\n\r\n00:02:19.371 --> 00:02:22.460\r\nGlitch
-    Out, shatter the world, detonate\r\n\r\n00:02:22.460 --> 00:02:25.681\r\nGlitch
-    Out, phase through every hitbox gate\r\n\r\n00:02:25.681 --> 00:02:28.961\r\nGlitch
-    Out, crack the code, hack the way\r\n\r\n00:02:28.961 --> 00:02:32.119\r\nGlitch
-    Out (Ohh) Glitch Out (Ohh)\r\n\r\n00:02:32.119 --> 00:02:35.297\r\nGlitch Out,
-    push and beyond the voltage\r\n\r\n00:02:35.297 --> 00:02:38.488\r\nGlitch Out,
-    undefined is my own way\r\n\r\n00:02:38.488 --> 00:02:41.720\r\nGlitch Out, I
-    will never obey\r\n\r\n00:02:41.720 --> 00:02:45.437\r\nGlitch Out (Ohh) Glitch
-    Out (Ohh)\r\n\r\n00:02:45.437 --> 00:02:48.076\r\nIt's time to ignite, twist
-    your fate outright\r\n\r\n00:02:48.076 --> 00:02:51.435\r\nOnly kilobytes to
-    override your sight\r\n\r\n00:02:51.435 --> 00:02:54.515\r\nLet\u2019s jump with
-    the bass sound, crash-land in the blackout\r\n\r\n00:02:54.515 --> 00:03:00.110\r\n1,
-    2 I-I-Imma Glitch Out\r\n\r\n00:03:03.033 --> 00:03:07.570\r\n(Turn on the GOD
-    MODE!)\r\n\r\n00:03:07.570 --> 00:03:10.585\r\n1, 2 I-I-Imma Glitch Out\r\n\r\n00:03:47.421
-    --> 00:03:48.982\r\n(We go out of bounds!)"
+  str: "WEBVTT\r\n\r\n00:16.05 --> 00:17.12\r\nI was a ghost\r\n\r\n00:17.12 -->
+    00:19.00\r\nI was alone, ha\r\n\r\n00:19.00 --> 00:21.07\r\n\uC5B4\uB450\uC6CC\uC9C4
+    Ha\r\n\r\n00:21.07 --> 00:23.90\r\n\uC55E\uAE38 \uC18D\uC5D0\r\n\r\n00:23.90
+    --> 00:24.88\r\nGiven the throne\r\n\r\n00:24.88 --> 00:26.10\r\nI didn't know\r\n\r\n00:26.10
+    --> 00:28.03\r\nHow to believe\r\n\r\n00:28.03 --> 00:30.79\r\nI was the queen
+    that I'm meant to be\r\n\r\n00:30.79 --> 00:32.48\r\nI lived two lives\r\n\r\n00:32.48
+    --> 00:34.61\r\nTried to play both sides\r\n\r\n00:34.61 --> 00:38.30\r\nBut
+    I couldn't find my own place\r\n\r\n00:38.30 --> 00:40.32\r\nCalled a problem
+    child\r\n\r\n00:40.32 --> 00:42.51\r\n'Cause I got too wild\r\n\r\n00:42.51 -->
+    00:45.57\r\nBut now that's how I'm getting paid\r\n\r\n00:45.57 --> 00:46.78\r\n\uB05D\uC5C6\uC774
+    On stage\r\n\r\n00:46.78 --> 00:54.12\r\nI'm done hiding, now I'm shining like
+    I'm born to be\r\n\r\n00:54.12 --> 01:01.51\r\nWe dreamin' hard, we came so far,
+    now I believe\r\n\r\n01:01.51 --> 01:03.78\r\nWe're goin' up, up, up\r\n\r\n01:03.78
+    --> 01:05.38\r\nIt's our moment\r\n\r\n01:05.38 --> 01:07.35\r\nYou know together
+    we're glowing\r\n\r\n01:07.35 --> 01:09.25\r\nGonna be, gonna be golden\r\n\r\n01:09.25
+    --> 01:11.58\r\nOh, up, up, up\r\n\r\n01:11.58 --> 01:13.25\r\nWith our voices\r\n\r\n01:13.25
+    --> 01:15.16\r\n\uC601\uC6D0\uD788 \uAE68\uC9C8 \uC218 \uC5C6\uB294\r\n\r\n01:15.16
+    --> 01:17.10\r\nGonna be, gonna be golden\r\n\r\n01:17.10 --> 01:25.34\r\nOh,
+    I'm done hiding, now I'm shining like I'm born to be\r\n\r\n01:25.34 --> 01:33.12\r\nOh,
+    our time, no fears, no lies, that's who we're born to be\r\n\r\n01:35.05 -->
+    01:39.15\r\nWaited so long to break these walls down\r\n\r\n01:39.15 --> 01:43.14\r\nTo
+    wake up and feel like me\r\n\r\n01:43.14 --> 01:47.00\r\nPut these patterns all
+    in the past now\r\n\r\n01:47.00 --> 01:50.60\r\nAnd finally live like the girl
+    they all see\r\n\r\n01:51.60 --> 01:59.18\r\nNo more hiding, I'll be shining
+    like I'm born to be\r\n\r\n01:59.18 --> 02:06.95\r\n'Cause we are hunters, voices
+    strong, and I know I believe\r\n\r\n02:06.95 --> 02:09.27\r\nWe're goin' up,
+    up, up\r\n\r\n02:09.27 --> 02:10.90\r\nIt's our moment\r\n\r\n02:10.90 --> 02:12.82\r\nYou
+    know together we're glowing\r\n\r\n02:12.82 --> 02:14.72\r\nGonna be, gonna be
+    golden\r\n\r\n02:14.72 --> 02:17.10\r\nOh, up, up, up\r\n\r\n02:17.10 --> 02:18.70\r\nWith
+    our voices\r\n\r\n02:18.70 --> 02:20.64\r\n\uC601\uC6D0\uD788 \uAE68\uC9C8 \uC218
+    \uC5C6\uB294\r\n\r\n02:20.64 --> 02:22.60\r\nGonna be, gonna be golden\r\n\r\n02:22.60
+    --> 02:30.82\r\nOh, I'm done hiding, now I'm shining like I'm born to be\r\n\r\n02:30.82
+    --> 02:38.07\r\nOh, our time, no fears, no lies, that's who we're born to be\r\n\r\n02:38.20
+    --> 02:39.18\r\nYou know we're\r\n\r\n02:39.18 --> 02:40.92\r\nGonna be, gonna
+    be golden\r\n\r\n02:40.92 --> 02:43.00\r\nWe're gonna be, gonna be\r\n\r\n02:43.00
+    --> 02:44.91\r\nBorn to be, born to be glowin'\r\n\r\n02:44.91 --> 02:46.32\r\n\uBC1D\uAC8C
+    \uBE5B\uB098\uB294 \uC6B0\uB9AC\r\n\r\n02:46.32 --> 02:54.55\r\nYou know that
+    it's our time, no fears, no lies, that's who we're born to be\r\n"
   nextLine: {fileID: 1841769363}
   currentLine: {fileID: 1274859887}
 --- !u!4 &609303208
@@ -539,7 +671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 328.00003}
+  m_AnchoredPosition: {x: 0, y: 436}
   m_SizeDelta: {x: 899.449, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274859887
@@ -767,7 +899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 428}
+  m_AnchoredPosition: {x: 0, y: 334}
   m_SizeDelta: {x: 899.449, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841769363
@@ -878,3 +1010,4 @@ SceneRoots:
   - {fileID: 635357300}
   - {fileID: 676930508}
   - {fileID: 609303208}
+  - {fileID: 542253124}

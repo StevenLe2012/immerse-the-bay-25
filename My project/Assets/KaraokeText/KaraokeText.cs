@@ -1,10 +1,11 @@
 using JetBrains.Annotations;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Xml;
 using TMPro;
-using UnityEditor.Search;
+// using UnityEditor.Search;
 using UnityEngine;
 
 public class Timestamp
@@ -23,9 +24,25 @@ public class Timestamp
     {
         Debug.Log(text);
         var split = text.Split(':');
-        hours = int.Parse(split[0]);
-        minutes = int.Parse(split[1]);
-        seconds = double.Parse(split[2]);
+
+        if (split.Length == 2)
+        {
+            hours = 0;
+            minutes = int.Parse(split[0]);
+            seconds = double.Parse(split[1]);
+        }
+        else if (split.Length == 3)
+        {
+            hours = int.Parse(split[0]);
+            minutes = int.Parse(split[1]);
+            seconds = double.Parse(split[2]);
+        }
+        else if (split.Length == 1)
+        {
+            hours = 0;
+            minutes = 0;
+            seconds = double.Parse(split[0]);
+        }
     }
 }
 public class LyricalLine
@@ -36,12 +53,16 @@ public class LyricalLine
 }
 public class KaraokeText : MonoBehaviour
 {
+    // audiosource, very important that it is set!!!
+    public AudioSource audioSource;
+
     // The canvas UI gameobject.
     public Canvas canvas;
 
     // An instance that you can access this class from anywhere.
     public static KaraokeText Instance;
 
+    // MOST IMPORTANT THING!!!
     // This string should be populated with the VTT data.
     // Make sure this is the data and not the filename.
     [TextArea]
@@ -61,7 +82,7 @@ public class KaraokeText : MonoBehaviour
     float timeElapsed = 0f;
     bool isInitialized = false;
     int currentIndex = 0;
-    
+
     void Start()
     {
         // NOTE! You may not want to put this in the Start function.
@@ -69,7 +90,12 @@ public class KaraokeText : MonoBehaviour
         // audio and the subtitles.
         InitKaraoke();
         Instance = this;
+
+        //KaraokeText.Instance.str = File.ReadAllText({ insert filename});
+        //KaraokeText.Instance.InitKaraoke();
+        //KaraokeText.Instance.UpdateKaraoke();
     }
+    // 
 
     // Read VTT Text that is in the str variable.
     // If you need to use a different subtitle format (SRT) let me know on discord.
@@ -108,7 +134,7 @@ public class KaraokeText : MonoBehaviour
         // NOTE!! Use this isInitialized variable if needed.
         // Update Karaoke should only be called if isInitialized.
         isInitialized = true;
-        
+
         // Reinitialize time.
         timeElapsed = 0;
     }
@@ -161,6 +187,6 @@ public class KaraokeText : MonoBehaviour
     // If you want you can reset timeElapsed, but AudioSource.time is more accurate.
     float GetAudioTime()
     {
-        return timeElapsed;
+        return audioSource.time;
     }
 }
