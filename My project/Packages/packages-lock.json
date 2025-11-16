@@ -330,7 +330,7 @@
       "url": "https://packages.unity.com"
     },
     "com.xreal.xr": {
-      "version": "file:/Users/kihyvr/Downloads/package",
+      "version": "file:C:/Users/quyen/Downloads/com.xreal.xr/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
