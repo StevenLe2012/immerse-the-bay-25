@@ -11,7 +11,7 @@ public class PlaybackController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private KaraokeManager karaokeManager;
-    
+
     [Header("UI Controls")]
     [SerializeField] private Button playButton;
     [SerializeField] private Button pauseButton;
@@ -19,29 +19,29 @@ public class PlaybackController : MonoBehaviour
     [SerializeField] private Slider progressSlider;
     [SerializeField] private TextMeshProUGUI currentTimeText;
     [SerializeField] private TextMeshProUGUI totalTimeText;
-    
+
     [Header("Volume Control")]
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private AudioSource audioSource;
-    
+
     private bool isDraggingSlider = false;
-    
+
     void Start()
     {
         if (karaokeManager == null)
         {
-            karaokeManager = FindObjectOfType<KaraokeManager>();
+            karaokeManager = FindFirstObjectByType<KaraokeManager>();
         }
-        
+
         SetupButtons();
         SetupSliders();
     }
-    
+
     void Update()
     {
         UpdateProgressDisplay();
     }
-    
+
     /// <summary>
     /// Setup button listeners
     /// </summary>
@@ -51,18 +51,18 @@ public class PlaybackController : MonoBehaviour
         {
             playButton.onClick.AddListener(OnPlayClicked);
         }
-        
+
         if (pauseButton != null)
         {
             pauseButton.onClick.AddListener(OnPauseClicked);
         }
-        
+
         if (stopButton != null)
         {
             stopButton.onClick.AddListener(OnStopClicked);
         }
     }
-    
+
     /// <summary>
     /// Setup slider listeners
     /// </summary>
@@ -72,14 +72,14 @@ public class PlaybackController : MonoBehaviour
         {
             progressSlider.onValueChanged.AddListener(OnProgressSliderChanged);
         }
-        
+
         if (volumeSlider != null)
         {
             volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
             volumeSlider.value = audioSource != null ? audioSource.volume : 1f;
         }
     }
-    
+
     /// <summary>
     /// Play button clicked
     /// </summary>
@@ -90,7 +90,7 @@ public class PlaybackController : MonoBehaviour
             karaokeManager.PlayKaraoke();
         }
     }
-    
+
     /// <summary>
     /// Pause button clicked
     /// </summary>
@@ -101,7 +101,7 @@ public class PlaybackController : MonoBehaviour
             karaokeManager.PauseKaraoke();
         }
     }
-    
+
     /// <summary>
     /// Stop button clicked
     /// </summary>
@@ -112,7 +112,7 @@ public class PlaybackController : MonoBehaviour
             karaokeManager.StopKaraoke();
         }
     }
-    
+
     /// <summary>
     /// Progress slider value changed
     /// </summary>
@@ -123,7 +123,7 @@ public class PlaybackController : MonoBehaviour
             audioSource.time = value * audioSource.clip.length;
         }
     }
-    
+
     /// <summary>
     /// Volume slider changed
     /// </summary>
@@ -134,35 +134,35 @@ public class PlaybackController : MonoBehaviour
             audioSource.volume = value;
         }
     }
-    
+
     /// <summary>
     /// Update progress display
     /// </summary>
     private void UpdateProgressDisplay()
     {
         if (audioSource == null || audioSource.clip == null) return;
-        
+
         float currentTime = audioSource.time;
         float totalTime = audioSource.clip.length;
-        
+
         // Update slider
         if (progressSlider != null && !isDraggingSlider)
         {
             progressSlider.value = totalTime > 0 ? currentTime / totalTime : 0;
         }
-        
+
         // Update time text
         if (currentTimeText != null)
         {
             currentTimeText.text = FormatTime(currentTime);
         }
-        
+
         if (totalTimeText != null)
         {
             totalTimeText.text = FormatTime(totalTime);
         }
     }
-    
+
     /// <summary>
     /// Format time in MM:SS format
     /// </summary>
@@ -172,7 +172,7 @@ public class PlaybackController : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeInSeconds % 60f);
         return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-    
+
     /// <summary>
     /// Called when user starts dragging the progress slider
     /// </summary>
@@ -180,7 +180,7 @@ public class PlaybackController : MonoBehaviour
     {
         isDraggingSlider = true;
     }
-    
+
     /// <summary>
     /// Called when user stops dragging the progress slider
     /// </summary>

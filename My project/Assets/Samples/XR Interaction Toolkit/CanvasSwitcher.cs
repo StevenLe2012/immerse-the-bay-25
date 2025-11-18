@@ -37,6 +37,10 @@ public class CanvasSwitcher : MonoBehaviour
     public void SwitchToSelectionCanvas()
     {
         selectionCanvas.SetActive(true);
+        if (this.gameObject.GetComponent<AudioSource>() != null)
+        {
+            this.gameObject.GetComponent<AudioSource>().Stop();
+        }
         karaokeCanvas.SetActive(false);
         Debug.Log("Switched to Selection Canvas");
     }

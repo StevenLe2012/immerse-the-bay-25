@@ -154,4 +154,28 @@ public class SongListController : MonoBehaviour
     {
         return spawnedTiles.Count;
     }
+
+    public void PreviousSong()
+    {
+        // Implement logic to navigate to the previous song in the list
+
+    }
+
+    public void NextSong()
+    {
+        // Implement logic to navigate to the next song in the list
+
+    }
+
+    public void Pause()
+    {
+        // Implement logic to pause the current song
+
+    }
+
+    public void Play()
+    {
+        // Implement logic to play the current song
+
+    }
 }
